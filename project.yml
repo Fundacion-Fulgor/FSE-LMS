@@ -6,6 +6,6 @@ authors:
 - Ezequiel Cavestri
 - Octabio Baccino
 type: Digital
-tapeout_target: false
+tapeout_target: true
 description: ''
 status_text: Proposed
