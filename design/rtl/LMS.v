@@ -8,6 +8,7 @@ module LMS
     parameter NBFy  = 5, //Bits fraccionarios de la salida
     parameter Nw    = 9, //Numero de coeficientes
     parameter NBw   = 7, //Bits de los coeficientes
+    parameter NBe = NBy + 1, //Bits de la señal de error
     parameter NBFw  = 5  //Bits fraccionarios de los coeficiente
 )
 (
@@ -16,7 +17,11 @@ module LMS
     input                        d,
     input signed  [NBy    -1 :0] y,   
     input signed  [NBx    -1 :0] x,   
-    output        [Nw*NBw -1 :0] coeff
+    output        [Nw*NBw -1 :0] coeff,
+    // Debug unit interface
+    input wire [Nw*NBw -1 :0] i_coeffs,
+    input                     debug_load, 
+    output signed [NBe-1 :0]  e_out
 );
 
 //Parametros locales:
@@ -27,7 +32,6 @@ localparam NBFd = NBFy;
 localparam NBd = NBFy + 2;
 localparam NBId = NBd - NBFd;
 localparam NBe = NBy + 1;
-localparam NBFe = NBFy;
 localparam NBmult = NBx + NBmu + NBe;
 localparam NBFmult = NBFx + NBFmu + NBFe;
 localparam NBImult = NBmult - NBFmult;
@@ -129,7 +133,16 @@ always @(posedge clkA) begin
         end
     end
     else begin
-        if(enable) begin
+        if (debug_load) begin
+            for(k=0; k<Nw; k=k+1) begin
+                w[k] <= { 
+                    {(NBsumSat - (NBw + (NBFsumSat - NBFw))){i_coeffs[NBw*(k+1)-1]}}, 
+                    i_coeffs[NBw*(k+1)-1 -: NBw],
+                    {(NBFsumSat - NBFw){1'b0}} 
+                };
+            end
+        end
+        else if(enable) begin
             for(k=0; k<Nw; k=k+1) begin
                 w[k] <= sumSat[k];
             end
@@ -147,5 +160,7 @@ generate
         assign coeff[NBw*(h+1)-1 -: NBw] = w_out[h];
     end
 endgenerate
+
+assign e_out = e;
 
 endmodule
