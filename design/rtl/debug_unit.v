@@ -8,6 +8,7 @@ module debug_unit #(
   input  wire [NB_ADDR-1:0]   spi_addr,
   input  wire [NB_DATA-1:0]   spi_wdata,
   input  wire                 spi_wr_en,
+  input  wire                 spi_ss_n,
   output reg  [NB_DATA-1:0]   spi_rdata,
   // Probe Inputs
   input  wire [NB_DATA-1:0]   monitor_status,
@@ -59,6 +60,115 @@ localparam [NB_ADDR-1:0] ADDR_FORCE_W6 = 'h36;
 localparam [NB_ADDR-1:0] ADDR_FORCE_W7 = 'h37;
 localparam [NB_ADDR-1:0] ADDR_FORCE_W8 = 'h38;
 
+reg [2:0] wr_en_sync; 
+wire      wr_en_pulse;
+always @(posedge clk or negedge rst_n) begin
+  if (!rst_n) wr_en_sync <= 3'b000;
+  else        wr_en_sync <= {wr_en_sync[1:0], spi_wr_en};
+end
+
+assign wr_en_pulse = (wr_en_sync[2:1] == 2'b01);
+
+// CDC Synchronization (Snapshot)
+wire [NB_DATA-1:0] monitor_status_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_monitor_status (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(monitor_status),
+  .data_out(monitor_status_sync)
+);
+
+wire [NB_DATA-1:0] error_signal_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_error_signal (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(error_signal),
+  .data_out(error_signal_sync)
+);
+
+wire [NB_DATA-1:0] mon_w0_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w0 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w0),
+  .data_out(mon_w0_sync)
+);
+
+wire [NB_DATA-1:0] mon_w1_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w1 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w1),
+  .data_out(mon_w1_sync)
+);
+
+wire [NB_DATA-1:0] mon_w2_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w2 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w2),
+  .data_out(mon_w2_sync)
+);
+
+wire [NB_DATA-1:0] mon_w3_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w3 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w3),
+  .data_out(mon_w3_sync)
+);
+
+wire [NB_DATA-1:0] mon_w4_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w4 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w4),
+  .data_out(mon_w4_sync)
+);
+
+wire [NB_DATA-1:0] mon_w5_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w5 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w5),
+  .data_out(mon_w5_sync)
+);
+
+wire [NB_DATA-1:0] mon_w6_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w6 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w6),
+  .data_out(mon_w6_sync)
+);
+
+wire [NB_DATA-1:0] mon_w7_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w7 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w7),
+  .data_out(mon_w7_sync)
+);
+
+wire [NB_DATA-1:0] mon_w8_sync;
+cdc_snapshot #(.DATA_WIDTH(NB_DATA)) u_cdc_mon_w8 (
+  .clk(clk),
+  .rst_n(rst_n),
+  .trigger_async_n(spi_ss_n),
+  .data_in(mon_w8),
+  .data_out(mon_w8_sync)
+);
+
 always @(posedge clk or negedge rst_n) begin
   if (!rst_n) begin
     sw_reset <= {NB_DATA{1'b0}};
@@ -74,7 +184,7 @@ always @(posedge clk or negedge rst_n) begin
     force_w8 <= {NB_DATA{1'b0}};
   end
   else begin
-    if (spi_wr_en) begin
+    if (wr_en_pulse) begin
       case (spi_addr)
         ADDR_SW_RESET: sw_reset <= spi_wdata;
         ADDR_DEBUG_LOAD: debug_load <= spi_wdata;
@@ -94,18 +204,18 @@ end
 
 always @(*) begin
   case (spi_addr)
-    // Probes
-    ADDR_MONITOR_STATUS: spi_rdata = monitor_status;
-    ADDR_ERROR_SIGNAL: spi_rdata = error_signal;
-    ADDR_MON_W0: spi_rdata = mon_w0;
-    ADDR_MON_W1: spi_rdata = mon_w1;
-    ADDR_MON_W2: spi_rdata = mon_w2;
-    ADDR_MON_W3: spi_rdata = mon_w3;
-    ADDR_MON_W4: spi_rdata = mon_w4;
-    ADDR_MON_W5: spi_rdata = mon_w5;
-    ADDR_MON_W6: spi_rdata = mon_w6;
-    ADDR_MON_W7: spi_rdata = mon_w7;
-    ADDR_MON_W8: spi_rdata = mon_w8;
+    // Probes (Synchronized)
+    ADDR_MONITOR_STATUS: spi_rdata = monitor_status_sync;
+    ADDR_ERROR_SIGNAL: spi_rdata = error_signal_sync;
+    ADDR_MON_W0: spi_rdata = mon_w0_sync;
+    ADDR_MON_W1: spi_rdata = mon_w1_sync;
+    ADDR_MON_W2: spi_rdata = mon_w2_sync;
+    ADDR_MON_W3: spi_rdata = mon_w3_sync;
+    ADDR_MON_W4: spi_rdata = mon_w4_sync;
+    ADDR_MON_W5: spi_rdata = mon_w5_sync;
+    ADDR_MON_W6: spi_rdata = mon_w6_sync;
+    ADDR_MON_W7: spi_rdata = mon_w7_sync;
+    ADDR_MON_W8: spi_rdata = mon_w8_sync;
     // Controls (Readback)
     ADDR_SW_RESET: spi_rdata = sw_reset;
     ADDR_DEBUG_LOAD: spi_rdata = debug_load;
