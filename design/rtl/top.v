@@ -19,10 +19,13 @@ module top
     input                       spi_mosi,
     output                      spi_miso,
 
-    input signed  [NBin-1  :0] x,
-    output signed [NBout-1 :0] y 
+    input      x_serial,
+    output     y_serial
 );
 
+wire [NBin-1 :0] x_parallel;
+wire sys_enable;
+wire x_ready;
 wire        [Ncoeff*NBcoeff -1 :0] coeff;
 wire                               d;
 wire signed [NBin           -1 :0] xROM;
@@ -30,17 +33,29 @@ wire signed [NBin           -1 :0] xAux;
 reg signed  [NBin           -1 :0] x_r;
 wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
 wire [7:0] w_mon_0, w_mon_1, w_mon_2, w_mon_3, w_mon_4, w_mon_5, w_mon_6, w_mon_7, w_mon_8;
-wire debug_load;
+wire [7:0] debug_load_bus;
+wire [7:0] sys_enable_bus;
 wire [Ncoeff*NBcoeff -1 :0] coeff_force_packed;
 wire signed [NBin + 1 -1 :0] e_out;
+wire signed [NBout -1 :0] y;
 
 wire [6:0] spi_addr;    
 wire [7:0] spi_wdata;   
 wire       spi_wr_en;   
 wire [7:0] spi_rdata;   
 
-// TODO: Modificar la interfaz paralela a serie en la entrada de datos
-// Instanciar modulos S2P y P2S
+assign sys_enable = sys_enable_bus[0];
+
+serial_to_parallel #(
+    .N (NBin) 
+) u_s2p_input (
+    .i_clock  (clkA),
+    .i_reset  (!reset),   
+    .i_enable (sys_enable),
+    .i_data   (x_serial),
+    .o_ready  (x_ready), 
+    .o_data   (x_parallel)
+);
 
 spi_slave_mode0 #(
         .ADDR_BITS(7),
@@ -61,7 +76,7 @@ spi_slave_mode0 #(
 
 
 debug_unit u_debug_unit (
-    .clk            (clkA           ),
+    .clk            (clkA          ),
     .rst_n          (reset         ),
     .spi_addr       (spi_addr),
     .spi_wdata      (spi_wdata),
@@ -79,7 +94,8 @@ debug_unit u_debug_unit (
     .mon_w7         (w_mon_7        ),
     .mon_w8         (w_mon_8        ),
     .sw_reset       (),
-    .debug_load     (debug_load     ),
+    .debug_load     (debug_load_bus ),
+    .enable_sig     (sys_enable_bus ),
     .force_w0       (w_force_0      ),
     .force_w1       (w_force_1      ),
     .force_w2       (w_force_2      ),
@@ -114,7 +130,9 @@ assign coeff_force_packed = {
 };
 
 always @(posedge clkA) begin
-    x_r <= x;
+    if (x_ready) begin
+        x_r <= x_parallel;
+    end
 end
 
 //Instancia de FIR
@@ -129,7 +147,8 @@ FIR_t
 ) u_FIR(
     .clk    (clkA  ),
     .reset  (reset ),
-    .x      (x     ),
+    .i_enable (x_ready),
+    .x      (x_parallel  ),
     .coeff  (coeff ),
     .y(y)
 );
@@ -151,10 +170,23 @@ LMS
     .y       (y     ),
     .d       (d     ),
     .x       (x_r     ),
+    .i_enable (x_ready),
     .coeff   (coeff ),
-    .debug_load(debug_load),
+    .debug_load(debug_load_bus[0]),
     .i_coeffs(coeff_force_packed),
     .e_out   (e_out  )
+);
+
+parallel_to_serial #(
+    .N (NBout)
+) u_p2s_output (
+    .i_clock  (clkA),
+    .i_reset  (!reset),   
+    .i_enable (sys_enable), 
+    .i_load   (x_ready),   
+    .i_data   (y),
+    .o_valid  (),   
+    .o_data   (y_serial)   
 );
 
 endmodule

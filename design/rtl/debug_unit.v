@@ -25,6 +25,7 @@ module debug_unit #(
   // Control Outputs
   output reg  [NB_DATA-1:0]   sw_reset,
   output reg  [NB_DATA-1:0]   debug_load,
+  output reg  [NB_DATA-1:0]   enable_sig,
   output reg  [NB_DATA-1:0]   force_w0,
   output reg  [NB_DATA-1:0]   force_w1,
   output reg  [NB_DATA-1:0]   force_w2,
@@ -50,6 +51,7 @@ localparam [NB_ADDR-1:0] ADDR_MON_W7 = 'h27;
 localparam [NB_ADDR-1:0] ADDR_MON_W8 = 'h28;
 localparam [NB_ADDR-1:0] ADDR_SW_RESET = 'h10;
 localparam [NB_ADDR-1:0] ADDR_DEBUG_LOAD = 'h11;
+localparam [NB_ADDR-1:0] ADDR_ENABLE_SIG = 'h12;
 localparam [NB_ADDR-1:0] ADDR_FORCE_W0 = 'h30;
 localparam [NB_ADDR-1:0] ADDR_FORCE_W1 = 'h31;
 localparam [NB_ADDR-1:0] ADDR_FORCE_W2 = 'h32;
@@ -59,15 +61,6 @@ localparam [NB_ADDR-1:0] ADDR_FORCE_W5 = 'h35;
 localparam [NB_ADDR-1:0] ADDR_FORCE_W6 = 'h36;
 localparam [NB_ADDR-1:0] ADDR_FORCE_W7 = 'h37;
 localparam [NB_ADDR-1:0] ADDR_FORCE_W8 = 'h38;
-
-reg [2:0] wr_en_sync; 
-wire      wr_en_pulse;
-always @(posedge clk or negedge rst_n) begin
-  if (!rst_n) wr_en_sync <= 3'b000;
-  else        wr_en_sync <= {wr_en_sync[1:0], spi_wr_en};
-end
-
-assign wr_en_pulse = (wr_en_sync[2:1] == 2'b01);
 
 // CDC Synchronization (Snapshot)
 wire [NB_DATA-1:0] monitor_status_sync;
@@ -173,6 +166,7 @@ always @(posedge clk or negedge rst_n) begin
   if (!rst_n) begin
     sw_reset <= {NB_DATA{1'b0}};
     debug_load <= {NB_DATA{1'b0}};
+    enable_sig <= {NB_DATA{1'b0}};
     force_w0 <= {NB_DATA{1'b0}};
     force_w1 <= {NB_DATA{1'b0}};
     force_w2 <= {NB_DATA{1'b0}};
@@ -184,10 +178,11 @@ always @(posedge clk or negedge rst_n) begin
     force_w8 <= {NB_DATA{1'b0}};
   end
   else begin
-    if (wr_en_pulse) begin
+    if (spi_wr_en) begin
       case (spi_addr)
         ADDR_SW_RESET: sw_reset <= spi_wdata;
         ADDR_DEBUG_LOAD: debug_load <= spi_wdata;
+        ADDR_ENABLE_SIG: enable_sig <= spi_wdata;
         ADDR_FORCE_W0: force_w0 <= spi_wdata;
         ADDR_FORCE_W1: force_w1 <= spi_wdata;
         ADDR_FORCE_W2: force_w2 <= spi_wdata;
@@ -219,6 +214,7 @@ always @(*) begin
     // Controls (Readback)
     ADDR_SW_RESET: spi_rdata = sw_reset;
     ADDR_DEBUG_LOAD: spi_rdata = debug_load;
+    ADDR_ENABLE_SIG: spi_rdata = enable_sig;
     ADDR_FORCE_W0: spi_rdata = force_w0;
     ADDR_FORCE_W1: spi_rdata = force_w1;
     ADDR_FORCE_W2: spi_rdata = force_w2;
