@@ -126,7 +126,6 @@ generate
     end
 endgenerate
 
-//Desplazamiento de registros de coeficientes:
 integer k;
 always @(posedge clkA) begin
     if (!reset) begin
@@ -139,28 +138,22 @@ always @(posedge clkA) begin
             end
         end
     end
-    else begin
-        if (i_enable) begin
-            if (debug_load) begin
-                for(k=0; k<Nw; k=k+1) begin
-                    w[k] <= { 
-                        {(NBsumSat - (NBw + (NBFsumSat - NBFw))){i_coeffs[NBw*(k+1)-1]}}, 
-                        i_coeffs[NBw*(k+1)-1 -: NBw],
-                        {(NBFsumSat - NBFw){1'b0}} 
-                    };
-                end
-            end
-            else if(enable) begin
-                for(k=0; k<Nw; k=k+1) begin
-                    w[k] <= sumSat[k];
-                end
-            end
-            else begin
-                w[k] <= w[k];
-            end
+    else if (debug_load) begin
+        for(k=0; k<Nw; k=k+1) begin
+            w[k] <= { 
+                {(NBsumSat - (NBw + (NBFsumSat - NBFw))){i_coeffs[NBw*(k+1)-1]}}, 
+                i_coeffs[NBw*(k+1)-1 -: NBw],
+                {(NBFsumSat - NBFw){1'b0}} 
+            };
+        end
+    end 
+    else if(i_enable && enable) begin
+        for(k=0; k<Nw; k=k+1) begin
+            w[k] <= sumSat[k];
         end
     end
 end
+
 
 //Coeficientes de salida:
 generate

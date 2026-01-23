@@ -26,6 +26,7 @@ module top
 wire [NBin-1 :0] x_parallel;
 wire sys_enable;
 wire x_ready;
+reg x_ready_q;
 wire        [Ncoeff*NBcoeff -1 :0] coeff;
 wire                               d;
 wire signed [NBin           -1 :0] xROM;
@@ -81,6 +82,7 @@ debug_unit u_debug_unit (
     .spi_addr       (spi_addr),
     .spi_wdata      (spi_wdata),
     .spi_wr_en      (spi_wr_en),
+    .spi_ss_n      (spi_ss_n),
     .spi_rdata      (spi_rdata),
     .monitor_status (8'b0),
     .error_signal   (e_out [NBin : NBin-7]),
@@ -130,6 +132,7 @@ assign coeff_force_packed = {
 };
 
 always @(posedge clkA) begin
+    x_ready_q <= x_ready;
     if (x_ready) begin
         x_r <= x_parallel;
     end
@@ -170,7 +173,7 @@ LMS
     .y       (y     ),
     .d       (d     ),
     .x       (x_r     ),
-    .i_enable (x_ready),
+    .i_enable (x_ready_q),
     .coeff   (coeff ),
     .debug_load(debug_load_bus[0]),
     .i_coeffs(coeff_force_packed),
