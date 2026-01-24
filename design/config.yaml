@@ -1,0 +1,29 @@
+DESIGN_NAME: top
+
+#Verilog Files
+VERILOG_FILES: 
+- dir::rtl/top.v
+- dir::rtl/spi_slave_mode0.v
+- dir::rtl/serial_to_parallel.v
+- dir::rtl/parallel_to_serial.v
+- dir::rtl/debug_unit.v
+- dir::rtl/cdc_snapshot.v
+- dir::rtl/LMS.v
+- dir::rtl/FIR_t.v
+
+#SDC
+PNR_SDC_FILE: dir::constrains/constrains.sdc
+SIGNOFF_SDC_FILE: dir::constrains/constrains.sdc
+
+#Clock
+CLOCK_PORT: clkA
+CLOCK_PERIOD: 10 # 10ns = 100MHz
+ 
+VSRC_LOC_FILES:
+ VPWR: dir::irdrop/vpwr.csv
+ VGND: dir::irdrop/vgnd.csv
+
+#Floorplan
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 550, 550]
+CORE_AREA: [20.16, 22.68, 529.84, 527.32] 

@@ -1,0 +1,246 @@
+
+Magic 8.3 revision 581 - Compiled on Tue Jan  6 19:09:29 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "/nix/store/8h87vsa3wlidvqi062p0312chxkh8ihd-python3.13-librelane-3.0.0.dev47/lib/python3.13/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+> lef read /opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef
+Reading LEF data from file /opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef.
+This action cannot be undone.
+LEF read, Line 79 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 80 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 81 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 87 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 91 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 92 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 122 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 123 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 129 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 134 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 135 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 163 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 164 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 165 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 176 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 177 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 205 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 206 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 207 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 218 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 219 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 246 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 247 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 248 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 254 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 259 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 260 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 286 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 287 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 288 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 293 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 320 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 321 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 322 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 327 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 328 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read: Processed 1197 lines.
+> lef read /opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef
+Reading LEF data from file /opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef.
+This action cannot be undone.
+LEF read, Line 6473 (Message): Unknown keyword "ANTENNAMAXCUTCAR" in LEF file; ignoring.
+LEF read: Processed 7927 lines.
+> lef read /opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef
+Reading LEF data from file /opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef.
+This action cannot be undone.
+LEF read: Processed 4552 lines.
+> def read /home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/53-odb-cellfrequencytables/top.def -noblockage -labels
+Reading DEF data from file /home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/53-odb-cellfrequencytables/top.def.
+This action cannot be undone.
+  Processed 6 vias total.
+  Processed 2 non-default rules total.
+  Processed 29590 subcell instances total.
+  Processed 10 pins total.
+  Processed 2 special nets total.
+  Processed 13742 nets total.
+DEF read: Processed 236651 lines.
+Moving label "_01153_" from metal2 to via2 in cell top.
+Moving label "_01156_" from metal2 to via2 in cell top.
+Moving label "_01725_" from metal2 to via2 in cell top.
+Moving label "_01822_" from metal2 to via1 in cell top.
+Moving label "_01823_" from metal2 to via1 in cell top.
+Moving label "_01919_" from metal2 to via1 in cell top.
+Moving label "_02039_" from metal2 to via1 in cell top.
+Moving label "_02181_" from metal2 to via1 in cell top.
+Moving label "_02508_" from metal2 to via1 in cell top.
+Moving label "_02752_" from metal2 to via2 in cell top.
+Moving label "_02783_" from metal3 to via2 in cell top.
+Moving label "_02797_" from metal2 to via1 in cell top.
+Moving label "_02867_" from metal2 to via1 in cell top.
+Moving label "_03108_" from metal2 to via1 in cell top.
+Moving label "_03241_" from metal2 to via2 in cell top.
+Moving label "_03320_" from metal2 to via2 in cell top.
+Moving label "_03417_" from metal2 to via1 in cell top.
+Moving label "_03421_" from metal2 to via1 in cell top.
+Moving label "_03464_" from metal2 to via1 in cell top.
+Moving label "_03572_" from metal2 to via1 in cell top.
+Moving label "_03927_" from metal2 to via2 in cell top.
+Moving label "_04114_" from metal2 to via2 in cell top.
+Moving label "_04180_" from metal2 to via2 in cell top.
+Moving label "_04326_" from metal2 to via1 in cell top.
+Moving label "_04438_" from metal2 to via2 in cell top.
+Moving label "_04499_" from metal2 to via2 in cell top.
+Moving label "_04521_" from metal3 to via2 in cell top.
+Moving label "_04558_" from metal2 to via2 in cell top.
+Moving label "_04884_" from metal2 to via2 in cell top.
+Moving label "_04898_" from metal3 to via2 in cell top.
+Moving label "_04901_" from metal2 to via2 in cell top.
+Moving label "_05047_" from metal2 to via1 in cell top.
+Moving label "_05131_" from metal2 to via1 in cell top.
+Moving label "_05201_" from metal2 to via1 in cell top.
+Moving label "_05257_" from metal2 to via1 in cell top.
+Moving label "_05332_" from metal2 to via1 in cell top.
+Moving label "_05388_" from metal2 to via1 in cell top.
+Moving label "_05801_" from metal2 to via1 in cell top.
+Moving label "_05855_" from metal2 to via2 in cell top.
+Moving label "_05876_" from metal2 to via1 in cell top.
+Moving label "_05981_" from metal2 to via1 in cell top.
+Moving label "_06100_" from metal3 to via2 in cell top.
+Moving label "_06114_" from metal3 to via2 in cell top.
+Moving label "_06153_" from metal3 to via2 in cell top.
+Moving label "_06320_" from metal2 to via2 in cell top.
+Moving label "_06334_" from metal2 to via2 in cell top.
+Moving label "_06365_" from metal3 to via2 in cell top.
+Moving label "_06402_" from metal2 to via1 in cell top.
+Moving label "_06462_" from metal2 to via2 in cell top.
+Moving label "_06666_" from metal2 to via1 in cell top.
+Moving label "_06709_" from metal2 to via1 in cell top.
+Moving label "_06767_" from metal2 to via2 in cell top.
+Moving label "_06808_" from metal3 to via2 in cell top.
+Moving label "_06810_" from metal2 to via1 in cell top.
+Moving label "_06909_" from metal2 to via1 in cell top.
+Moving label "_06973_" from metal2 to via1 in cell top.
+Moving label "_07093_" from metal2 to via1 in cell top.
+Moving label "_07100_" from metal2 to via1 in cell top.
+Moving label "_07273_" from metal3 to via2 in cell top.
+Moving label "_07327_" from metal2 to via1 in cell top.
+Moving label "_07525_" from metal2 to via2 in cell top.
+Moving label "_07901_" from metal2 to via2 in cell top.
+Moving label "_07954_" from metal2 to via1 in cell top.
+Moving label "_08031_" from metal2 to via1 in cell top.
+Moving label "_08072_" from metal3 to via2 in cell top.
+Moving label "_08077_" from metal2 to via2 in cell top.
+Moving label "_08197_" from metal2 to via1 in cell top.
+Moving label "_08222_" from metal2 to via1 in cell top.
+Moving label "_08264_" from metal2 to via1 in cell top.
+Moving label "_08288_" from metal2 to via2 in cell top.
+Moving label "_08378_" from metal2 to via1 in cell top.
+Moving label "_08385_" from metal2 to via1 in cell top.
+Moving label "_08394_" from metal2 to via2 in cell top.
+Moving label "_08650_" from metal2 to via1 in cell top.
+Moving label "_08656_" from metal2 to via1 in cell top.
+Moving label "_08668_" from metal2 to via1 in cell top.
+Moving label "_09001_" from metal2 to via2 in cell top.
+Moving label "_09088_" from metal2 to via2 in cell top.
+Moving label "_09261_" from metal2 to via1 in cell top.
+Moving label "_09388_" from metal2 to via1 in cell top.
+Moving label "_09445_" from metal2 to via2 in cell top.
+Moving label "_09486_" from metal2 to via1 in cell top.
+Moving label "_09562_" from metal2 to via2 in cell top.
+Moving label "_09688_" from metal2 to via1 in cell top.
+Moving label "_09694_" from metal2 to via1 in cell top.
+Moving label "_09706_" from metal2 to via1 in cell top.
+Moving label "_09717_" from metal2 to via2 in cell top.
+Moving label "_09721_" from metal2 to via1 in cell top.
+Moving label "_09777_" from metal2 to via1 in cell top.
+Moving label "_09888_" from metal2 to via1 in cell top.
+Moving label "_09996_" from metal2 to via1 in cell top.
+Moving label "_10004_" from metal2 to via1 in cell top.
+Moving label "_10009_" from metal2 to via1 in cell top.
+Moving label "_10044_" from metal2 to via1 in cell top.
+Moving label "_10365_" from metal2 to via1 in cell top.
+Moving label "_10399_" from metal2 to via1 in cell top.
+Moving label "_10414_" from metal2 to via2 in cell top.
+Moving label "_10659_" from metal2 to via1 in cell top.
+Moving label "_10664_" from metal2 to via1 in cell top.
+Moving label "_10787_" from metal3 to via2 in cell top.
+Moving label "_11049_" from metal2 to via2 in cell top.
+Moving label "clkA" from metal3 to via2 in cell top.
+Moving label "clknet_leaf_8_clkA" from metal2 to via1 in cell top.
+Moving label "net1007" from metal2 to via2 in cell top.
+Moving label "net1215" from metal2 to via1 in cell top.
+Moving label "net135" from metal2 to via1 in cell top.
+Moving label "net1352" from metal2 to via1 in cell top.
+Moving label "net1474" from metal2 to via1 in cell top.
+Moving label "net1558" from metal2 to via1 in cell top.
+Moving label "net1586" from metal2 to via1 in cell top.
+Moving label "net255" from metal2 to via2 in cell top.
+Moving label "net321" from metal2 to via1 in cell top.
+Moving label "net511" from metal2 to via1 in cell top.
+Moving label "net546" from metal2 to via2 in cell top.
+Moving label "net681" from metal3 to via2 in cell top.
+Moving label "net858" from metal2 to via2 in cell top.
+Moving label "net864" from metal2 to via1 in cell top.
+Moving label "net915" from metal2 to via1 in cell top.
+Moving label "net996" from metal2 to via2 in cell top.
+Moving label "spi_ss_n" from metal3 to via2 in cell top.
+Moving label "u_FIR.sum\[6\]\[1\]" from metal2 to via1 in cell top.
+Moving label "u_LMS.w\[1\]\[22\]" from metal3 to via2 in cell top.
+Moving label "u_LMS.w\[2\]\[14\]" from metal2 to via2 in cell top.
+Moving label "u_LMS.w\[6\]\[4\]" from metal2 to via2 in cell top.
+Moving label "u_p2s_output.reg_sh\[2\]" from metal2 to via2 in cell top.
+Processing top
+Extracting sg13g2_buf_1 into sg13g2_buf_1.ext:
+Extracting sg13g2_buf_8 into sg13g2_buf_8.ext:
+Extracting sg13g2_inv_1 into sg13g2_inv_1.ext:
+Extracting sg13g2_inv_4 into sg13g2_inv_4.ext:
+Extracting sg13g2_inv_8 into sg13g2_inv_8.ext:
+Extracting sg13g2_inv_2 into sg13g2_inv_2.ext:
+Extracting sg13g2_buf_16 into sg13g2_buf_16.ext:
+Extracting sg13g2_ebufn_2 into sg13g2_ebufn_2.ext:
+Extracting sg13g2_dfrbpq_1 into sg13g2_dfrbpq_1.ext:
+Extracting sg13g2_tiehi into sg13g2_tiehi.ext:
+Extracting sg13g2_o21ai_1 into sg13g2_o21ai_1.ext:
+Extracting sg13g2_mux2_1 into sg13g2_mux2_1.ext:
+Extracting sg13g2_a21oi_1 into sg13g2_a21oi_1.ext:
+Extracting sg13g2_a22oi_1 into sg13g2_a22oi_1.ext:
+Extracting sg13g2_nor2_1 into sg13g2_nor2_1.ext:
+Extracting sg13g2_xnor2_1 into sg13g2_xnor2_1.ext:
+Extracting sg13g2_nand3b_1 into sg13g2_nand3b_1.ext:
+Extracting sg13g2_nor3_1 into sg13g2_nor3_1.ext:
+Extracting sg13g2_and3_1 into sg13g2_and3_1.ext:
+Extracting sg13g2_nand3_1 into sg13g2_nand3_1.ext:
+Extracting sg13g2_and2_1 into sg13g2_and2_1.ext:
+Extracting sg13g2_nand2b_1 into sg13g2_nand2b_1.ext:
+Extracting sg13g2_nor2b_1 into sg13g2_nor2b_1.ext:
+Extracting sg13g2_a21o_1 into sg13g2_a21o_1.ext:
+Extracting sg13g2_nand2_1 into sg13g2_nand2_1.ext:
+Extracting sg13g2_xor2_1 into sg13g2_xor2_1.ext:
+Extracting sg13g2_or2_1 into sg13g2_or2_1.ext:
+Extracting sg13g2_a221oi_1 into sg13g2_a221oi_1.ext:
+Extracting sg13g2_or3_1 into sg13g2_or3_1.ext:
+Extracting sg13g2_nand4_1 into sg13g2_nand4_1.ext:
+Extracting sg13g2_and4_1 into sg13g2_and4_1.ext:
+Extracting sg13g2_nor4_1 into sg13g2_nor4_1.ext:
+Extracting sg13g2_decap_8 into sg13g2_decap_8.ext:
+Extracting sg13g2_fill_2 into sg13g2_fill_2.ext:
+Extracting sg13g2_decap_4 into sg13g2_decap_4.ext:
+Extracting sg13g2_fill_1 into sg13g2_fill_1.ext:
+Extracting sg13g2_antennanp into sg13g2_antennanp.ext:
+Extracting top into top.ext:
+exttospice finished.

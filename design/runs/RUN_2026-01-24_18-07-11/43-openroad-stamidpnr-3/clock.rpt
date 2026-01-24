@@ -1,0 +1,102 @@
+Clock: clkA
+Sources: clkA 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 20.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+clkA                 20.000000    0.000000 10.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock clkA
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+0.621634         network latency _23258_/CLK
+        0.689074 network latency _23676_/CLK
+---------------
+0.621634 0.689074 latency
+        0.067441 skew
+
+fall -> fall
+    min     max
+0.000000 0.000000 source latency
+0.614277         network latency _23258_/CLK
+        0.682750 network latency _23676_/CLK
+---------------
+0.614277 0.682750 latency
+        0.068473 skew
+
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+clkA period_min = 13.34 fmax = 74.98
+Clock: spi_sclk
+Sources: spi_sclk 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 100.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+spi_sclk            100.000000    0.000000 50.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock spi_sclk
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+0.226150         network latency _23740_/CLK
+        0.246162 network latency _23764_/CLK
+---------------
+0.226150 0.246162 latency
+        0.020012 skew
+
+rise -> fall
+    min     max
+0.000000 0.000000 source latency
+0.257605         network latency _22982_/CLK
+        0.269861 network latency _22984_/CLK
+---------------
+0.257605 0.269861 latency
+        0.012256 skew
+
+fall -> rise
+    min     max
+0.000000 0.000000 source latency
+0.264031         network latency _22982_/CLK
+        0.277353 network latency _22984_/CLK
+---------------
+0.264031 0.277353 latency
+        0.013323 skew
+
+fall -> fall
+    min     max
+0.000000 0.000000 source latency
+0.229079         network latency _23740_/CLK
+        0.248484 network latency _23764_/CLK
+---------------
+0.229079 0.248484 latency
+        0.019405 skew
+
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+spi_sclk period_min = 3.04 fmax = 329.39

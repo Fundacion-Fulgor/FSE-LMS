@@ -1,0 +1,125 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.odb'…
+Reading design constraints file at '/home/designer/shared/FSE-LMS/design/constrains/constrains.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ repair_timing -verbose -setup -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -max_buffer_percent 50
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
++ repair_timing -verbose -hold -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -hold_margin 0.1000000000000000055511151231257827021181583404541015625 -max_buffer_percent 50
+[INFO RSZ-0046] Found 691 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |  -0.344 | -13.646 | _23773_/D
+       10 |       0 |      20 |            0 |    +0.2% |  -0.311 | -10.739 | _22981_/D
+       20 |       0 |      44 |            0 |    +0.4% |  -0.303 |  -7.296 | _23762_/D
+       30 |       0 |      67 |            0 |    +0.6% |  -0.290 |  -3.893 | _23736_/D
+       40 |       0 |      97 |            0 |    +0.9% |  -0.250 |  -1.491 | _23734_/D
+       50 |       0 |     118 |            0 |    +1.1% |  -0.010 |  -0.036 | _23780_/D
+       60 |       0 |     136 |            0 |    +1.3% |  -0.001 |  -0.003 | _23687_/D
+       70 |       0 |     150 |            0 |    +1.4% |   0.001 |   0.000 | _23713_/D
+       80 |       0 |     163 |            0 |    +1.6% |   0.002 |   0.000 | _23638_/D
+       90 |       0 |     174 |            0 |    +1.7% |   0.003 |   0.000 | _23665_/D
+      100 |       0 |     189 |            0 |    +1.8% |   0.003 |   0.000 | _23499_/D
+      110 |       0 |     205 |            0 |    +2.0% |   0.004 |   0.000 | _23644_/D
+      120 |       0 |     216 |            0 |    +2.1% |   0.007 |   0.000 | _23514_/D
+      130 |       0 |     229 |            0 |    +2.2% |   0.008 |   0.000 | _23540_/D
+      140 |       0 |     239 |            0 |    +2.3% |   0.009 |   0.000 | _23548_/D
+      150 |       0 |     249 |            0 |    +2.4% |   0.010 |   0.000 | _23680_/D
+      160 |       0 |     259 |            0 |    +2.5% |   0.011 |   0.000 | _23569_/D
+      170 |       0 |     272 |            0 |    +2.6% |   0.012 |   0.000 | _23647_/D
+      180 |       0 |     283 |            0 |    +2.7% |   0.016 |   0.000 | _23720_/D
+      190 |       0 |     294 |            0 |    +2.8% |   0.018 |   0.000 | _23707_/D
+      200 |       0 |     304 |            0 |    +2.9% |   0.020 |   0.000 | _23352_/D
+      210 |       0 |     315 |            0 |    +3.0% |   0.021 |   0.000 | _23283_/D
+      220 |       0 |     326 |            0 |    +3.1% |   0.022 |   0.000 | _23081_/D
+      230 |       0 |     337 |            0 |    +3.2% |   0.023 |   0.000 | _23140_/D
+      240 |       0 |     347 |            0 |    +3.3% |   0.023 |   0.000 | _23119_/D
+      250 |       0 |     357 |            0 |    +3.4% |   0.024 |   0.000 | _22991_/D
+      260 |       0 |     368 |            0 |    +3.5% |   0.025 |   0.000 | _23023_/D
+      270 |       0 |     377 |            0 |    +3.6% |   0.025 |   0.000 | _23019_/D
+      280 |       0 |     387 |            0 |    +3.7% |   0.026 |   0.000 | _23059_/D
+      290 |       0 |     396 |            0 |    +3.8% |   0.027 |   0.000 | _23144_/D
+      300 |       0 |     405 |            0 |    +3.9% |   0.028 |   0.000 | _23076_/D
+      310 |       0 |     416 |            0 |    +4.0% |   0.029 |   0.000 | _23095_/D
+      320 |       0 |     429 |            0 |    +4.1% |   0.030 |   0.000 | _23254_/D
+      330 |       0 |     439 |            0 |    +4.2% |   0.031 |   0.000 | _23589_/D
+      340 |       0 |     449 |            0 |    +4.3% |   0.031 |   0.000 | _23084_/D
+      350 |       0 |     459 |            0 |    +4.4% |   0.032 |   0.000 | _23631_/D
+      360 |       0 |     468 |            0 |    +4.5% |   0.033 |   0.000 | _23560_/D
+      370 |       0 |     478 |            0 |    +4.6% |   0.033 |   0.000 | _23131_/D
+      380 |       0 |     488 |            0 |    +4.7% |   0.034 |   0.000 | _23591_/D
+      390 |       0 |     498 |            0 |    +4.8% |   0.035 |   0.000 | _23438_/D
+      400 |       0 |     508 |            0 |    +4.9% |   0.036 |   0.000 | _23583_/D
+      410 |       0 |     518 |            0 |    +5.0% |   0.037 |   0.000 | _23259_/D
+      420 |       0 |     528 |            0 |    +5.1% |   0.038 |   0.000 | _23373_/D
+      430 |       0 |     538 |            0 |    +5.2% |   0.038 |   0.000 | _23498_/D
+      440 |       0 |     548 |            0 |    +5.2% |   0.040 |   0.000 | _23012_/D
+      450 |       0 |     558 |            0 |    +5.3% |   0.041 |   0.000 | _23675_/D
+      460 |       0 |     570 |            0 |    +5.5% |   0.042 |   0.000 | _23566_/D
+      470 |       0 |     581 |            0 |    +5.6% |   0.044 |   0.000 | _23052_/D
+      480 |       0 |     591 |            0 |    +5.7% |   0.045 |   0.000 | _23416_/D
+      490 |       0 |     601 |            0 |    +5.8% |   0.045 |   0.000 | _23355_/D
+      500 |       0 |     612 |            0 |    +5.9% |   0.046 |   0.000 | _23581_/D
+      510 |       0 |     622 |            0 |    +6.0% |   0.047 |   0.000 | _23554_/D
+      520 |       0 |     633 |            0 |    +6.1% |   0.048 |   0.000 | _23032_/D
+      530 |       0 |     643 |            0 |    +6.2% |   0.049 |   0.000 | _23347_/D
+      540 |       0 |     653 |            0 |    +6.3% |   0.050 |   0.000 | _23267_/D
+      550 |       0 |     665 |            0 |    +6.4% |   0.051 |   0.000 | _23620_/D
+      560 |       0 |     674 |            0 |    +6.5% |   0.053 |   0.000 | _23361_/D
+      570 |       0 |     684 |            0 |    +6.6% |   0.056 |   0.000 | _23341_/D
+      580 |       0 |     694 |            0 |    +6.6% |   0.057 |   0.000 | _23266_/D
+      590 |       0 |     704 |            0 |    +6.7% |   0.059 |   0.000 | _23597_/D
+      600 |       0 |     716 |            0 |    +6.9% |   0.060 |   0.000 | _23595_/D
+      610 |       0 |     726 |            0 |    +7.0% |   0.063 |   0.000 | _23268_/D
+      620 |       0 |     736 |            0 |    +7.0% |   0.064 |   0.000 | _23365_/D
+      630 |       0 |     746 |            0 |    +7.1% |   0.065 |   0.000 | _23390_/D
+      640 |       0 |     757 |            0 |    +7.2% |   0.067 |   0.000 | _23366_/D
+      650 |       0 |     767 |            0 |    +7.3% |   0.069 |   0.000 | _23380_/D
+      660 |       0 |     777 |            0 |    +7.4% |   0.071 |   0.000 | _23387_/D
+      670 |       0 |     787 |            0 |    +7.5% |   0.074 |   0.000 | _23287_/D
+      680 |       0 |     797 |            0 |    +7.6% |   0.078 |   0.000 | _22979_/D
+      690 |       0 |     807 |            0 |    +7.7% |   0.078 |   0.000 | _22979_/D
+      700 |       0 |     815 |            0 |    +7.8% |   0.097 |   0.000 | _23528_/D
+    final |       0 |     817 |            0 |    +7.8% |   0.101 |   0.000 | _23650_/D
+--------------------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 817 hold buffers.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       2812.9 u
+average displacement        0.2 u
+max displacement            8.9 u
+original HPWL          481350.1 u
+legalized HPWL         490452.5 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 6204 instances
+[INFO DPL-0021] HPWL before          490452.5 u
+[INFO DPL-0022] HPWL after           480687.5 u
+[INFO DPL-0023] HPWL delta               -2.0 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 1634 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                    4      29.03
+  Clock buffer                            133    3703.19
+  Timing Repair Buffer                   1867   20961.76
+  Inverter                                384    2090.19
+  Clock inverter                           54     381.02
+  Sequential cell                         804   39387.00
+  Multi-Input combinational cell        11380  117300.96
+  Total                                 14626  183853.15
+Writing OpenROAD database to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/37-openroad-resizertimingpostcts/top.odb'…
+Writing netlist to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/37-openroad-resizertimingpostcts/top.nl.v'…
+Writing powered netlist to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/37-openroad-resizertimingpostcts/top.pnl.v'…
+Writing layout to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/37-openroad-resizertimingpostcts/top.def'…
+Writing timing constraints to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/37-openroad-resizertimingpostcts/top.sdc'…

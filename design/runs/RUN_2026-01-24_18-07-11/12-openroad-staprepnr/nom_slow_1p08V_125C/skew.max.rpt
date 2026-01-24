@@ -1,0 +1,22 @@
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+Clock clkA
+0.000000 source latency _22986_/CLK ^
+0.000000 target latency _22986_/CLK ^
+0.200000 clock uncertainty
+0.000000 CRPR
+--------------
+0.200000 setup skew
+
+Clock spi_sclk
+0.029342 source latency _22978_/CLK ^
+-0.029342 target latency _22978_/CLK ^
+0.500000 clock uncertainty
+0.000000 CRPR
+--------------
+0.500000 setup skew
+

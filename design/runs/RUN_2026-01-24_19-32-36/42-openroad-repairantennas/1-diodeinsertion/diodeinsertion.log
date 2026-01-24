@@ -1,0 +1,79 @@
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/39-openroad-globalrouting/top.odb'…
+Reading design constraints file at '/home/designer/shared/FSE-LMS/design/constrains/constrains.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: TopMetal2 and clock max routing layer to TopMetal2. 
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: TopMetal2
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.4200  line-2-Via Pitch: 0.3650
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.4800  line-2-Via Pitch: 0.4150
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.4200  line-2-Via Pitch: 0.4150
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.4800  line-2-Via Pitch: 0.4150
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.4200  line-2-Via Pitch: 0.6200
+[INFO GRT-0088] Layer TopMetal1 Track-Pitch = 2.2800  line-2-Via Pitch: 3.4100
+[INFO GRT-0088] Layer TopMetal2 Track-Pitch = 4.0000  line-2-Via Pitch: 3.9500
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 112 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical        98080         65219          33.50%
+Metal3     Horizontal     116046         75871          34.62%
+Metal4     Vertical        98080         65219          33.50%
+Metal5     Horizontal     114982         75088          34.70%
+TopMetal1    Vertical        20257         12688          37.36%
+TopMetal2    Horizontal      10575          6206          41.31%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 69259
+[INFO GRT-0198] Via related Steiner nodes: 903
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 83417
+[INFO GRT-0112] Final usage 3D: 301101
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           65219         23678           36.31%             0 /  0 /  0
+Metal3           75871         22660           29.87%             0 /  0 /  0
+Metal4           65219          3608            5.53%             0 /  0 /  0
+Metal5           75088           904            1.20%             0 /  0 /  0
+TopMetal1          12688             0            0.00%             0 /  0 /  0
+TopMetal2           6206             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           300291         50850           16.93%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 563032 um
+[INFO GRT-0014] Routed nets: 13742
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0012] Found 10 antenna violations.
+[INFO GRT-0302] Inserted 16 jumpers for 10 nets.
+[INFO GRT-0012] Found 0 antenna violations.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                    4      29.03
+  Clock buffer                            113    2883.08
+  Timing Repair Buffer                   1054    7649.51
+  Inverter                                384    2090.19
+  Clock inverter                           56     428.20
+  Sequential cell                         804   39387.00
+  Multi-Input combinational cell        11380  117300.96
+  Total                                 13795  169767.96
+Writing OpenROAD database to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/42-openroad-repairantennas/1-diodeinsertion/top.odb'…
+Writing layout to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/42-openroad-repairantennas/1-diodeinsertion/top.def'…
