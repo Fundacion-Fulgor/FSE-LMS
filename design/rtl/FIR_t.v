@@ -15,6 +15,7 @@ module FIR_t
     input                                reset,
     input signed  [NBin           -1 :0] x,
     input         [Ncoeff*NBcoeff -1 :0] coeff,
+    input                               i_enable,
     output signed [NBout          -1 :0] y
 );
 
@@ -45,8 +46,10 @@ always @(posedge clk) begin
         end
     end
     else begin
-        for(i=0; i<Ncoeff; i=i+1) begin
-            w[i] <= coeff[NBcoeff*(i+1)-1 -: NBcoeff];
+        if (i_enable) begin
+            for(i=0; i<Ncoeff; i=i+1) begin
+                w[i] <= coeff[NBcoeff*(i+1)-1 -: NBcoeff];
+            end
         end
     end
 end
@@ -57,7 +60,9 @@ always @(posedge clk) begin
         x_reg <= 0;
     end
     else begin
-        x_reg <= x;
+        if (i_enable) begin
+            x_reg <= x;
+        end
     end
 end
 
@@ -78,9 +83,11 @@ always @(posedge clk) begin
         end
     end
     else begin
-        sum[0] <= prod[0];
-        for(k=1; k<Nprod; k=k+1) begin
-            sum[k] <= prod[k] + sum[k-1];
+        if (i_enable) begin
+            sum[0] <= prod[0];
+            for(k=1; k<Nprod; k=k+1) begin
+                sum[k] <= prod[k] + sum[k-1];
+            end
         end
     end
 end

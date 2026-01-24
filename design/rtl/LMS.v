@@ -21,6 +21,7 @@ module LMS
     // Debug unit interface
     input wire [Nw*NBw -1 :0] i_coeffs,
     input                     debug_load, 
+    input              i_enable,
     output signed [NBe-1 :0]  e_out
 );
 
@@ -31,7 +32,7 @@ localparam NBFmu = 7;
 localparam NBFd = NBFy;
 localparam NBd = NBFy + 2;
 localparam NBId = NBd - NBFd;
-localparam NBe = NBy + 1;
+localparam NBFe = NBFy;
 localparam NBmult = NBx + NBmu + NBe;
 localparam NBFmult = NBFx + NBFmu + NBFe;
 localparam NBImult = NBmult - NBFmult;
@@ -63,8 +64,10 @@ reg signed  [NBcount-1  :0] count;              //Contador
 reg toggle = 0;
 wire enable;
 
-always @(posedge clkA) begin
-    toggle <= ~toggle;
+always @(posedge clkA ) begin
+    if (i_enable) begin
+        toggle <= ~toggle;
+    end
 end
 
 assign enable = toggle;
@@ -81,10 +84,12 @@ always @(posedge clkA) begin
         count <= 0;
     end
     else begin
-        count <= count + 1;
-        if (count == 600) begin
-            mu <= 8'b0_00000100;
-            count <= 0;
+        if (i_enable) begin
+            count <= count + 1;
+            if (count == 600) begin
+                mu <= 8'b0_00000100;
+                count <= 0;
+            end
         end
     end
 end
@@ -98,9 +103,11 @@ always @(posedge clkA) begin
         end
     end
     else begin
-        x_r[0] <= x;
-        for(j=1; j<Nw; j=j+1) begin
-            x_r[j] <= x_r[j-1];
+        if (i_enable) begin
+            x_r[0] <= x;
+            for(j=1; j<Nw; j=j+1) begin
+                x_r[j] <= x_r[j-1];
+            end
         end
     end
 end
@@ -119,7 +126,6 @@ generate
     end
 endgenerate
 
-//Desplazamiento de registros de coeficientes:
 integer k;
 always @(posedge clkA) begin
     if (!reset) begin
@@ -132,26 +138,22 @@ always @(posedge clkA) begin
             end
         end
     end
-    else begin
-        if (debug_load) begin
-            for(k=0; k<Nw; k=k+1) begin
-                w[k] <= { 
-                    {(NBsumSat - (NBw + (NBFsumSat - NBFw))){i_coeffs[NBw*(k+1)-1]}}, 
-                    i_coeffs[NBw*(k+1)-1 -: NBw],
-                    {(NBFsumSat - NBFw){1'b0}} 
-                };
-            end
+    else if (debug_load) begin
+        for(k=0; k<Nw; k=k+1) begin
+            w[k] <= { 
+                {(NBsumSat - (NBw + (NBFsumSat - NBFw))){i_coeffs[NBw*(k+1)-1]}}, 
+                i_coeffs[NBw*(k+1)-1 -: NBw],
+                {(NBFsumSat - NBFw){1'b0}} 
+            };
         end
-        else if(enable) begin
-            for(k=0; k<Nw; k=k+1) begin
-                w[k] <= sumSat[k];
-            end
-        end
-        else begin
-            w[k] <= w[k];
+    end 
+    else if(i_enable && enable) begin
+        for(k=0; k<Nw; k=k+1) begin
+            w[k] <= sumSat[k];
         end
     end
 end
+
 
 //Coeficientes de salida:
 generate
