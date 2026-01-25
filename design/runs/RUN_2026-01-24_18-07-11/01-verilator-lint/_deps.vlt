@@ -1,0 +1,7 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/tmp/af95a77ded734319863bea000fd70cf7.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/tmp/af95a77ded734319863bea000fd70cf7.bb.v"
+lint_off -rule UNDRIVEN -file "/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/tmp/efe471dbbed4471dbb5a276d3412ccc6.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/tmp/efe471dbbed4471dbb5a276d3412ccc6.bb.v"

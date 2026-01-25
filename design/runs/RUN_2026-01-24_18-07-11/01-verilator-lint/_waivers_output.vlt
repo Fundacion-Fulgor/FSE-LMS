@@ -1,0 +1,79 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule PINCONNECTEMPTY -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Instance pin connected by name with empty reference: 'done'*"
+
+// lint_off -rule PINCONNECTEMPTY -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Instance pin connected by name with empty reference: 'rx_frame'*"
+
+// lint_off -rule PINCONNECTEMPTY -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Instance pin connected by name with empty reference: 'sw_reset'*"
+
+// lint_off -rule PINCONNECTEMPTY -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Instance pin connected by name with empty reference: 'o_valid'*"
+
+// lint_off -rule WIDTHEXPAND -file "*/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v" -match "Operator ASSIGNDLY expects 19 bits on the Assign RHS, but Assign RHS's ARRAYSEL generates 15 bits.*"
+
+// lint_off -rule WIDTHEXPAND -file "*/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v" -match "Operator ADD expects 19 bits on the LHS, but LHS's ARRAYSEL generates 15 bits.*"
+
+// lint_off -rule WIDTHEXPAND -file "*/home/designer/shared/FSE-LMS/design/rtl/LMS.v" -match "Operator SUB expects 9 bits on the LHS, but LHS's VARREF 'd_e' generates 7 bits.*"
+
+// lint_off -rule WIDTHTRUNC -file "*/home/designer/shared/FSE-LMS/design/rtl/LMS.v" -match "Operator ASSIGNDLY expects 25 bits on the Assign RHS, but Assign RHS's CONST '36'h400000000' generates 36 bits.*"
+
+// lint_off -rule WIDTHEXPAND -file "*/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v" -match "Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'reg_cnt' generates 3 bits.*"
+
+// lint_off -rule WIDTHEXPAND -file "*/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v" -match "Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'reg_cnt' generates 3 bits.*"
+
+// lint_off -rule WIDTHEXPAND -file "*/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v" -match "Operator LT expects 32 bits on the LHS, but LHS's VARREF 'tx_cnt' generates 3 bits.*"
+
+// lint_off -rule BLKSEQ -file "*/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Signal is not driven, nor used: 'xROM'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Signal is not driven, nor used: 'xAux'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_0'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_1'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_2'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_3'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_4'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_5'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_6'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_7'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'w_force_8'[7]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'debug_load_bus'[7:1]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'sys_enable_bus'[7:1]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Bits of signal are not used: 'e_out'[0]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v" -match "Bits of signal are not used: 'rx_shift'[15]*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v" -match "Signal is not used: 'rw_latched'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v" -match "Signal is not used: 'addr_latched'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v" -match "Bits of signal are not used: 'reg_sh'[7]*"
+
+// lint_off -rule UNUSEDPARAM -file "*/home/designer/shared/FSE-LMS/design/rtl/LMS.v" -match "Parameter is not used: 'Nsum'*"
+
+// lint_off -rule PROCASSINIT -file "*/home/designer/shared/FSE-LMS/design/rtl/LMS.v" -match "Procedural assignment to declaration with initial value: 'toggle'*"
+
+// lint_off -rule UNUSEDPARAM -file "*/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v" -match "Parameter is not used: 'Nin'*"
+
+// lint_off -rule CASEINCOMPLETE -file "*/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v" -match "Case values incompletely covered (example pattern 0x0)*"
+
+// lint_off -rule SYNCASYNCNET -file "*/home/designer/shared/FSE-LMS/design/rtl/top.v" -match "Signal flopped as both synchronous and async: 'reset'*"
+

@@ -1,0 +1,196 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/34-openroad-detailedplacement/top.odb'…
+Reading design constraints file at '/home/designer/shared/FSE-LMS/design/constrains/constrains.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Configuring cts characterization…
++ configure_cts_characterization 
+[INFO] Performing clock tree synthesis…
+[INFO] Looking for the following net(s): clkA
+[INFO] Running Clock Tree Synthesis…
++ clock_tree_synthesis -buf_list sg13g2_buf_8 sg13g2_buf_4 sg13g2_buf_2 -root_buf sg13g2_buf_16 -sink_clustering_enable
+[INFO CTS-0050] Root buffer is sg13g2_buf_16.
+[INFO CTS-0051] Sink buffer is sg13g2_buf_8.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sg13g2_buf_2
+                    sg13g2_buf_4
+                    sg13g2_buf_8
+[INFO CTS-0049] Characterization buffer is sg13g2_buf_8.
+[INFO CTS-0007] Net "clkA" found for clock "clkA".
+[INFO CTS-0010]  Clock net "clkA" has 755 sinks.
+[INFO CTS-0007] Net "spi_sclk" found for clock "spi_sclk".
+[INFO CTS-0010]  Clock net "spi_sclk" has 49 sinks.
+[WARNING CTS-0041] Net "net1647" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1646" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1645" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1644" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1643" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1642" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1641" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1640" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1639" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1638" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1637" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1636" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "net1635" has 1 sinks. Skipping...
+[INFO CTS-0008] TritonCTS found 2 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clkA.
+[INFO CTS-0028]  Total number of sinks: 755.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 18900  dbu (18 um).
+[INFO CTS-0206] Best clustering solution was found from clustering size of 8 and clustering diameter of 50.
+[INFO CTS-0019]  Total number of sinks after clustering: 84.
+[INFO CTS-0024]  Normalized sink region: [(3.30522, 4.97374), (50.127, 46.8833)].
+[INFO CTS-0025]     Width:  46.8218.
+[INFO CTS-0026]     Height: 41.9096.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 42
+    Sub-region size: 23.4109 X 41.9096
+[INFO CTS-0034]     Segment length (rounded): 12.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 21
+    Sub-region size: 23.4109 X 20.9548
+[INFO CTS-0034]     Segment length (rounded): 10.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 11
+    Sub-region size: 11.7054 X 20.9548
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 4
+    Direction: Vertical
+    Sinks per sub-region: 6
+    Sub-region size: 11.7054 X 10.4774
+[INFO CTS-0034]     Segment length (rounded): 6.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 8.
+[INFO CTS-0035]  Number of sinks covered: 84.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net spi_sclk.
+[INFO CTS-0028]  Total number of sinks: 49.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 18900  dbu (18 um).
+[INFO CTS-0023]  Original sink region: [(612000, 426725), (706080, 595560)].
+[INFO CTS-0024]  Normalized sink region: [(32.381, 22.578), (37.3587, 31.5111)].
+[INFO CTS-0025]     Width:  4.9778.
+[INFO CTS-0026]     Height: 8.9331.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 25
+    Sub-region size: 4.9778 X 4.4665
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 13
+    Sub-region size: 2.4889 X 4.4665
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 7
+    Sub-region size: 2.4889 X 2.2333
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 8.
+[INFO CTS-0035]  Number of sinks covered: 49.
+[INFO CTS-0018]     Created 105 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 4.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 4.
+[INFO CTS-0015]     Created 105 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 5:13, 6:11, 7:10, 8:22, 9:11, 10:10, 11:15, 12:6, 13:2..
+[INFO CTS-0017]     Max level of the clock tree: 4.
+[INFO CTS-0018]     Created 9 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 9 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 6:7, 7:1..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0098] Clock net "clkA"
+[INFO CTS-0099]  Sinks 808
+[INFO CTS-0100]  Leaf buffers 84
+[INFO CTS-0101]  Average sink wire length 1462.70 um
+[INFO CTS-0102]  Path depth 3 - 4
+[INFO CTS-0207]  Dummy loads inserted 53
+[INFO CTS-0098] Clock net "spi_sclk"
+[INFO CTS-0099]  Sinks 56
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 532.21 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Dummy loads inserted 7
+[INFO] Repairing long wires on clock nets…
+[INFO RSZ-0058] Using max wire length 2937um.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 374 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                    4      29.03
+  Clock buffer                            133    3703.19
+  Timing Repair Buffer                   1050    7620.48
+  Inverter                                384    2090.19
+  Clock inverter                           54     381.02
+  Sequential cell                         804   39387.00
+  Multi-Input combinational cell        11380  117300.96
+  Total                                 13809  170511.87
+Writing OpenROAD database to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.odb'…
+Writing netlist to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.nl.v'…
+Writing powered netlist to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.pnl.v'…
+Writing layout to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.def'…
+Writing timing constraints to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.sdc'…
+[INFO] Legalizing…
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement        706.3 u
+average displacement        0.1 u
+max displacement            5.7 u
+original HPWL          474680.2 u
+legalized HPWL         482052.7 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 5494 instances
+[INFO DPL-0021] HPWL before          482052.7 u
+[INFO DPL-0022] HPWL after           474825.7 u
+[INFO DPL-0023] HPWL delta               -1.5 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                    4      29.03
+  Clock buffer                            133    3703.19
+  Timing Repair Buffer                   1050    7620.48
+  Inverter                                384    2090.19
+  Clock inverter                           54     381.02
+  Sequential cell                         804   39387.00
+  Multi-Input combinational cell        11380  117300.96
+  Total                                 13809  170511.87
+Writing OpenROAD database to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.odb'…
+Writing netlist to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.nl.v'…
+Writing powered netlist to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.pnl.v'…
+Writing layout to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.def'…
+Writing timing constraints to '/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_18-07-11/35-openroad-cts/top.sdc'…
+%OL_CREATE_REPORT cts.rpt
+Total number of Clock Roots: 2.
+Total number of Buffers Inserted: 114.
+Total number of Clock Subnets: 114.
+Total number of Sinks: 804.
+Cells used:
+  sg13g2_buf_16: 26
+  sg13g2_buf_8: 88
+Dummys used:
+  sg13g2_buf_8: 19
+  sg13g2_inv_1: 25
+  sg13g2_inv_2: 4
+  sg13g2_inv_4: 10
+  sg13g2_inv_8: 2
+%OL_END_REPORT

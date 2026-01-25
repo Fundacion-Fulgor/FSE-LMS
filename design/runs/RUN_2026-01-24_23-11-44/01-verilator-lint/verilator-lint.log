@@ -1,0 +1,165 @@
+%Warning-PINCONNECTEMPTY: /home/designer/shared/FSE-LMS/design/rtl/top.v:74:10: Instance pin connected by name with empty reference: 'done'
+   74 |         .done        (),     
+      |          ^~~~
+                          ... For warning description see https://verilator.org/warn/PINCONNECTEMPTY?v=5.042
+                          ... Use "/* verilator lint_off PINCONNECTEMPTY */" and lint_on around source to disable this message.
+%Warning-PINCONNECTEMPTY: /home/designer/shared/FSE-LMS/design/rtl/top.v:75:10: Instance pin connected by name with empty reference: 'rx_frame'
+   75 |         .rx_frame    ()     
+      |          ^~~~~~~~
+%Warning-PINCONNECTEMPTY: /home/designer/shared/FSE-LMS/design/rtl/top.v:98:6: Instance pin connected by name with empty reference: 'sw_reset'
+   98 |     .sw_reset       (),
+      |      ^~~~~~~~
+%Warning-PINCONNECTEMPTY: /home/designer/shared/FSE-LMS/design/rtl/top.v:191:6: Instance pin connected by name with empty reference: 'o_valid'
+  191 |     .o_valid  (),   
+      |      ^~~~~~~
+%Warning-WIDTHEXPAND: /home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:87:20: Operator ASSIGNDLY expects 19 bits on the Assign RHS, but Assign RHS's ARRAYSEL generates 15 bits.
+                                                                            : ... note: In instance 'top.u_FIR'
+   87 |             sum[0] <= prod[0];
+      |                    ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.042
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:89:35: Operator ADD expects 19 bits on the LHS, but LHS's ARRAYSEL generates 15 bits.
+                                                                            : ... note: In instance 'top.u_FIR'
+   89 |                 sum[k] <= prod[k] + sum[k-1];
+      |                                   ^
+%Warning-WIDTHEXPAND: /home/designer/shared/FSE-LMS/design/rtl/LMS.v:78:16: Operator SUB expects 9 bits on the LHS, but LHS's VARREF 'd_e' generates 7 bits.
+                                                                          : ... note: In instance 'top.u_LMS'
+   78 | assign e = d_e - y;
+      |                ^
+%Warning-WIDTHTRUNC: /home/designer/shared/FSE-LMS/design/rtl/LMS.v:137:22: Operator ASSIGNDLY expects 25 bits on the Assign RHS, but Assign RHS's CONST '36'h400000000' generates 36 bits.
+                                                                          : ... note: In instance 'top.u_LMS'
+  137 |                 w[k] <= 36'h400000000;
+      |                      ^~
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.042
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:55:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'reg_cnt' generates 3 bits.
+                                                                                         : ... note: In instance 'top.u_p2s_output'
+   55 |                     if (reg_cnt == N-2) begin
+      |                                 ^~
+%Warning-WIDTHEXPAND: /home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:39:29: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'reg_cnt' generates 3 bits.
+                                                                                         : ... note: In instance 'top.u_s2p_input'
+   39 |                 if (reg_cnt == N-1) begin
+      |                             ^~
+%Warning-WIDTHEXPAND: /home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:136:22: Operator LT expects 32 bits on the LHS, but LHS's VARREF 'tx_cnt' generates 3 bits.
+                                                                                       : ... note: In instance 'top.u_spi_slave'
+  136 |           if (tx_cnt < (DATA_BITS-1)) begin
+      |                      ^
+%Warning-BLKSEQ: /home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:79:18: Blocking assignment '=' in sequential logic process
+                                                                                 : ... note: In instance 'top.u_spi_slave'
+                                                                                 : ... Suggest using delayed assignment '<='
+   79 |         next_rx  = {rx_shift[FRAME_BITS-2:0], mosi};
+      |                  ^
+                 ... For warning description see https://verilator.org/warn/BLKSEQ?v=5.042
+                 ... Use "/* verilator lint_off BLKSEQ */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:32:36: Signal is not driven, nor used: 'xROM'
+                                                                           : ... note: In instance 'top'
+   32 | wire signed [NBin           -1 :0] xROM;
+      |                                    ^~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.042
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:33:36: Signal is not driven, nor used: 'xAux'
+                                                                           : ... note: In instance 'top'
+   33 | wire signed [NBin           -1 :0] xAux;
+      |                                    ^~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:12: Bits of signal are not used: 'w_force_0'[7]
+                                                                           : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |            ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:23: Bits of signal are not used: 'w_force_1'[7]
+                                                                           : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |                       ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:34: Bits of signal are not used: 'w_force_2'[7]
+                                                                           : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |                                  ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:45: Bits of signal are not used: 'w_force_3'[7]
+                                                                           : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |                                             ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:56: Bits of signal are not used: 'w_force_4'[7]
+                                                                           : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |                                                        ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:67: Bits of signal are not used: 'w_force_5'[7]
+                                                                           : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |                                                                   ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:78: Bits of signal are not used: 'w_force_6'[7]
+                                                                           : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |                                                                              ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:89: Bits of signal are not used: 'w_force_7'[7]
+                                                                           : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |                                                                                         ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:35:100: Bits of signal are not used: 'w_force_8'[7]
+                                                                            : ... note: In instance 'top'
+   35 | wire [7:0] w_force_0, w_force_1, w_force_2, w_force_3, w_force_4, w_force_5, w_force_6, w_force_7, w_force_8;
+      |                                                                                                    ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:37:12: Bits of signal are not used: 'debug_load_bus'[7:1]
+                                                                           : ... note: In instance 'top'
+   37 | wire [7:0] debug_load_bus;
+      |            ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:38:12: Bits of signal are not used: 'sys_enable_bus'[7:1]
+                                                                           : ... note: In instance 'top'
+   38 | wire [7:0] sys_enable_bus;
+      |            ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/top.v:40:30: Bits of signal are not used: 'e_out'[0]
+                                                                           : ... note: In instance 'top'
+   40 | wire signed [NBin + 1 -1 :0] e_out;
+      |                              ^~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:34:24: Bits of signal are not used: 'rx_shift'[15]
+                                                                                       : ... note: In instance 'top.u_spi_slave'
+   34 |   reg [FRAME_BITS-1:0] rx_shift;
+      |                        ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:39:7: Signal is not used: 'rw_latched'
+                                                                                      : ... note: In instance 'top.u_spi_slave'
+   39 |   reg rw_latched;
+      |       ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:40:23: Signal is not used: 'addr_latched'
+                                                                                       : ... note: In instance 'top.u_spi_slave'
+   40 |   reg [ADDR_BITS-1:0] addr_latched;
+      |                       ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:24:21: Bits of signal are not used: 'reg_sh'[7]
+                                                                                          : ... note: In instance 'top.u_s2p_input'
+   24 |     reg [N-1:0]     reg_sh;
+      |                     ^~~~~~
+%Warning-UNUSEDPARAM: /home/designer/shared/FSE-LMS/design/rtl/LMS.v:39:12: Parameter is not used: 'Nsum'
+                                                                          : ... note: In instance 'top.u_LMS'
+   39 | localparam Nsum = Nw;
+      |            ^~~~
+                      ... For warning description see https://verilator.org/warn/UNUSEDPARAM?v=5.042
+                      ... Use "/* verilator lint_off UNUSEDPARAM */" and lint_on around source to disable this message.
+%Warning-PROCASSINIT: /home/designer/shared/FSE-LMS/design/rtl/LMS.v:64:14: Procedural assignment to declaration with initial value: 'toggle'
+                                                                          : ... note: In instance 'top.u_LMS'
+                                                                          : ... Location of variable initialization
+   64 | reg toggle = 0;
+      |              ^
+                      /home/designer/shared/FSE-LMS/design/rtl/LMS.v:69:9: ... Location of variable process write
+                                                                         : ... Perhaps should initialize instead using a reset in this process
+   69 |         toggle <= ~toggle;
+      |         ^~~~~~
+                      ... For warning description see https://verilator.org/warn/PROCASSINIT?v=5.042
+                      ... Use "/* verilator lint_off PROCASSINIT */" and lint_on around source to disable this message.
+%Warning-UNUSEDPARAM: /home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:23:12: Parameter is not used: 'Nin'
+                                                                            : ... note: In instance 'top.u_FIR'
+   23 | localparam Nin = Ncoeff;               
+      |            ^~~
+%Warning-CASEINCOMPLETE: /home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:182:7: Case values incompletely covered (example pattern 0x0)
+  182 |       case (spi_addr)
+      |       ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.042
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+%Warning-SYNCASYNCNET: /home/designer/shared/FSE-LMS/design/rtl/top.v:15:32: Signal flopped as both synchronous and async: 'reset'
+                       /home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:57:10: ... Location of async usage
+   57 |     if (!rst_n) begin
+      |          ^~~~~
+                       /home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:43:9: ... Location of sync usage
+   43 |     if(!reset) begin
+      |         ^~~~~
+                       ... For warning description see https://verilator.org/warn/SYNCASYNCNET?v=5.042
+                       ... Use "/* verilator lint_off SYNCASYNCNET */" and lint_on around source to disable this message.
+- V e r i l a t i o n   R e p o r t: Verilator 5.042 2025-11-02 rev v5.040
+- Verilator: Built from 0.582 MB sources in 115 modules, into 0.211 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.048 s (elab=0.008, cvt=0.027, bld=0.000); cpu 0.048 s on 1 threads; alloced 23.035 MB

@@ -1,0 +1,56 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold reg-reg] _23772_/Q -> _23773_/D : -0.245993
+[hold reg-reg] _22979_/Q -> _22979_/D : -0.215767
+[hold reg-reg] _22980_/Q -> _22980_/D : -0.215106
+[hold reg-reg] _22981_/Q -> _22981_/D : -0.213131
+[hold reg-reg] _22983_/Q -> _22983_/D : -0.211035
+[hold reg-reg] _23765_/Q -> _23766_/D : -0.210302
+[hold reg-reg] _22982_/Q -> _22982_/D : -0.209361
+[hold reg-reg] _23768_/Q -> _23769_/D : -0.205362
+[hold reg-reg] _23769_/Q -> _23770_/D : -0.204656
+[hold reg-reg] _23770_/Q -> _23771_/D : -0.203286
+[hold reg-reg] _23767_/Q -> _23768_/D : -0.202260
+[hold reg-reg] _23777_/Q -> _23777_/D : -0.199831
+[hold reg-reg] _23766_/Q -> _23767_/D : -0.198031
+[hold reg-reg] _23731_/Q -> _23731_/D : -0.197566
+[hold reg-reg] _23775_/Q -> _23775_/D : -0.192180
+[hold reg-reg] _22984_/Q -> _22984_/D : -0.190891
+[hold reg-reg] _23771_/Q -> _23772_/D : -0.190724
+[hold reg-reg] _23760_/Q -> _23761_/D : -0.187353
+[hold reg-reg] _23776_/Q -> _23776_/D : -0.187227
+[hold reg-reg] _23730_/Q -> _23730_/D : -0.187178
+[hold reg-reg] _23759_/Q -> _23760_/D : -0.182763
+[hold reg-reg] _23761_/Q -> _23762_/D : -0.182371
+[hold reg-reg] _23758_/Q -> _23759_/D : -0.180093
+[hold reg-reg] _23732_/Q -> _23732_/D : -0.178034
+[hold reg-reg] _23764_/Q -> _23765_/D : -0.177908
+[hold reg-reg] _23763_/Q -> _23764_/D : -0.175379
+[hold reg-reg] _22978_/Q -> _22978_/D : -0.174975
+[hold reg-reg] _23762_/Q -> _23763_/D : -0.173708
+[hold reg-reg] _23729_/Q -> _23729_/D : -0.164419
+[hold reg-reg] _23736_/Q -> _23736_/D : -0.157847
+[hold reg-reg] _23740_/Q -> _23740_/D : -0.156947
+[hold reg-reg] _23737_/Q -> _23737_/D : -0.150022
+[hold reg-reg] _23764_/Q -> _23748_/D : -0.147796
+[hold reg-reg] _23739_/Q -> _23739_/D : -0.145065
+[hold reg-reg] _23760_/Q -> _23744_/D : -0.142599
+[hold reg-reg] _23759_/Q -> _23743_/D : -0.140652
+[hold reg-reg] _23738_/Q -> _23738_/D : -0.140149
+[hold reg-reg] _23761_/Q -> _23745_/D : -0.139728
+[hold reg-reg] _23758_/Q -> _23742_/D : -0.135960
+[hold reg-reg] _23763_/Q -> _23747_/D : -0.132714
+[hold reg-reg] _23762_/Q -> _23746_/D : -0.130092
+[hold reg-reg] _23765_/Q -> _23734_/D : -0.129406
+[hold reg-reg] _23758_/Q -> _23735_/D : -0.113519
+[hold reg-reg] _22984_/Q -> _22985_/D : -0.093454
+[hold reg-reg] _23778_/Q -> _23778_/D : -0.025023
+[hold reg-reg] _23774_/Q -> _23774_/D : -0.004537
+Writing metric timing__hold_vio__count__corner:nom_typ_1p20V_25C: 46
+Writing metric timing__hold_r2r__ws__corner:nom_typ_1p20V_25C: -0.245993
+Writing metric timing__hold_r2r_vio__count__corner:nom_typ_1p20V_25C: 46
+Writing metric timing__setup_vio__count__corner:nom_typ_1p20V_25C: 0
+Writing metric timing__setup_r2r__ws__corner:nom_typ_1p20V_25C: 6.527241
+Writing metric timing__setup_r2r_vio__count__corner:nom_typ_1p20V_25C: 0

@@ -1,0 +1,9 @@
+{
+    "json_h": "/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_23-11-44/05-yosys-jsonheader/top.h.json",
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 35,
+        "design__inferred_latch__count": 0
+    }
+}

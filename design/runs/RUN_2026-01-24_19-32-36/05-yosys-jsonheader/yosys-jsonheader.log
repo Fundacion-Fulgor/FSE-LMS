@@ -1,0 +1,845 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.60 (git sha1 5bafeb77dc71e054fa331ab9efa613e6fb0a1c49, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/tmp/6fe337f1da8d43fab9244b27eed21c16.bb.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/tmp/6fe337f1da8d43fab9244b27eed21c16.bb.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/tmp/6fe337f1da8d43fab9244b27eed21c16.bb.v
+Generating RTLIL representation for module `\sg13g2_a21o_1'.
+Generating RTLIL representation for module `\sg13g2_a21o_2'.
+Generating RTLIL representation for module `\sg13g2_a21oi_1'.
+Generating RTLIL representation for module `\sg13g2_a21oi_2'.
+Generating RTLIL representation for module `\sg13g2_a221oi_1'.
+Generating RTLIL representation for module `\sg13g2_a22oi_1'.
+Generating RTLIL representation for module `\sg13g2_and2_1'.
+Generating RTLIL representation for module `\sg13g2_and2_2'.
+Generating RTLIL representation for module `\sg13g2_and3_1'.
+Generating RTLIL representation for module `\sg13g2_and3_2'.
+Generating RTLIL representation for module `\sg13g2_and4_1'.
+Generating RTLIL representation for module `\sg13g2_and4_2'.
+Generating RTLIL representation for module `\sg13g2_antennanp'.
+Generating RTLIL representation for module `\sg13g2_buf_1'.
+Generating RTLIL representation for module `\sg13g2_buf_16'.
+Generating RTLIL representation for module `\sg13g2_buf_2'.
+Generating RTLIL representation for module `\sg13g2_buf_4'.
+Generating RTLIL representation for module `\sg13g2_buf_8'.
+Generating RTLIL representation for module `\sg13g2_decap_4'.
+Generating RTLIL representation for module `\sg13g2_decap_8'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_dlhq_1'.
+Generating RTLIL representation for module `\sg13g2_dlhr_1'.
+Generating RTLIL representation for module `\sg13g2_dlhrq_1'.
+Generating RTLIL representation for module `\sg13g2_dllr_1'.
+Generating RTLIL representation for module `\sg13g2_dllrq_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd1_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd2_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd3_1'.
+Generating RTLIL representation for module `\sg13g2_ebufn_2'.
+Generating RTLIL representation for module `\sg13g2_ebufn_4'.
+Generating RTLIL representation for module `\sg13g2_ebufn_8'.
+Generating RTLIL representation for module `\sg13g2_einvn_2'.
+Generating RTLIL representation for module `\sg13g2_einvn_4'.
+Generating RTLIL representation for module `\sg13g2_einvn_8'.
+Generating RTLIL representation for module `\sg13g2_fill_1'.
+Generating RTLIL representation for module `\sg13g2_fill_2'.
+Generating RTLIL representation for module `\sg13g2_fill_4'.
+Generating RTLIL representation for module `\sg13g2_fill_8'.
+Generating RTLIL representation for module `\sg13g2_inv_1'.
+Generating RTLIL representation for module `\sg13g2_inv_16'.
+Generating RTLIL representation for module `\sg13g2_inv_2'.
+Generating RTLIL representation for module `\sg13g2_inv_4'.
+Generating RTLIL representation for module `\sg13g2_inv_8'.
+Generating RTLIL representation for module `\sg13g2_lgcp_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_2'.
+Generating RTLIL representation for module `\sg13g2_mux4_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_2'.
+Generating RTLIL representation for module `\sg13g2_nand2b_1'.
+Generating RTLIL representation for module `\sg13g2_nand2b_2'.
+Generating RTLIL representation for module `\sg13g2_nand3_1'.
+Generating RTLIL representation for module `\sg13g2_nand3b_1'.
+Generating RTLIL representation for module `\sg13g2_nand4_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_2'.
+Generating RTLIL representation for module `\sg13g2_nor2b_1'.
+Generating RTLIL representation for module `\sg13g2_nor2b_2'.
+Generating RTLIL representation for module `\sg13g2_nor3_1'.
+Generating RTLIL representation for module `\sg13g2_nor3_2'.
+Generating RTLIL representation for module `\sg13g2_nor4_1'.
+Generating RTLIL representation for module `\sg13g2_nor4_2'.
+Generating RTLIL representation for module `\sg13g2_o21ai_1'.
+Generating RTLIL representation for module `\sg13g2_or2_1'.
+Generating RTLIL representation for module `\sg13g2_or2_2'.
+Generating RTLIL representation for module `\sg13g2_or3_1'.
+Generating RTLIL representation for module `\sg13g2_or3_2'.
+Generating RTLIL representation for module `\sg13g2_or4_1'.
+Generating RTLIL representation for module `\sg13g2_or4_2'.
+Generating RTLIL representation for module `\sg13g2_sdfbbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_sighold'.
+Generating RTLIL representation for module `\sg13g2_slgcp_1'.
+Generating RTLIL representation for module `\sg13g2_tiehi'.
+Generating RTLIL representation for module `\sg13g2_tielo'.
+Generating RTLIL representation for module `\sg13g2_xnor2_1'.
+Generating RTLIL representation for module `\sg13g2_xor2_1'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/tmp/2f3c3790970143348c89cd12ef28d0fd.bb.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/tmp/2f3c3790970143348c89cd12ef28d0fd.bb.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/runs/RUN_2026-01-24_19-32-36/tmp/2f3c3790970143348c89cd12ef28d0fd.bb.v
+Generating RTLIL representation for module `\sg13g2_Corner'.
+Generating RTLIL representation for module `\sg13g2_Filler1000'.
+Generating RTLIL representation for module `\sg13g2_Filler10000'.
+Generating RTLIL representation for module `\sg13g2_Filler200'.
+Generating RTLIL representation for module `\sg13g2_Filler2000'.
+Generating RTLIL representation for module `\sg13g2_Filler400'.
+Generating RTLIL representation for module `\sg13g2_Filler4000'.
+Generating RTLIL representation for module `\sg13g2_IOPadAnalog'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVss'.
+Generating RTLIL representation for module `\sg13g2_IOPadIn'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadVss'.
+Successfully finished Verilog frontend.
+wtaf
+
+3. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/rtl/top.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/rtl/top.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/rtl/top.v
+Storing AST representation for module `$abstract\top'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v
+/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:49: Warning: Yosys has only limited support for tri-state logic at the moment.
+Storing AST representation for module `$abstract\spi_slave_mode0'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v
+Storing AST representation for module `$abstract\serial_to_parallel'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v
+Storing AST representation for module `$abstract\parallel_to_serial'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/rtl/debug_unit.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/rtl/debug_unit.v
+Storing AST representation for module `$abstract\debug_unit'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v
+Storing AST representation for module `$abstract\cdc_snapshot'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/rtl/LMS.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/rtl/LMS.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/rtl/LMS.v
+Storing AST representation for module `$abstract\LMS'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /home/designer/shared/FSE-LMS/design/rtl/FIR_t.v
+Parsing SystemVerilog input from `/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v' to AST representation.
+verilog frontend filename /home/designer/shared/FSE-LMS/design/rtl/FIR_t.v
+Storing AST representation for module `$abstract\FIR_t'.
+Successfully finished Verilog frontend.
+
+11. Executing HIERARCHY pass (managing design hierarchy).
+
+12. Executing AST frontend in derive mode using pre-parsed AST for module `\top'.
+Generating RTLIL representation for module `\top'.
+
+12.1. Analyzing design hierarchy..
+Top module:  \top
+Parameter \N = 8
+
+12.2. Executing AST frontend in derive mode using pre-parsed AST for module `\parallel_to_serial'.
+Parameter \N = 8
+Generating RTLIL representation for module `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000'.
+Parameter \NBx = 8
+Parameter \NBFx = 5
+Parameter \NBy = 8
+Parameter \NBFy = 5
+Parameter \NBw = 7
+Parameter \NBFw = 5
+
+12.3. Executing AST frontend in derive mode using pre-parsed AST for module `\LMS'.
+Parameter \NBx = 8
+Parameter \NBFx = 5
+Parameter \NBy = 8
+Parameter \NBFy = 5
+Parameter \NBw = 7
+Parameter \NBFw = 5
+Generating RTLIL representation for module `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS'.
+Warning: Replacing memory \w with list of registers. See /home/designer/shared/FSE-LMS/design/rtl/LMS.v:134
+Warning: Replacing memory \x_r with list of registers. See /home/designer/shared/FSE-LMS/design/rtl/LMS.v:102
+Parameter \NBin = 8
+Parameter \NBFin = 5
+Parameter \NBout = 8
+Parameter \NBFout = 5
+Parameter \NBcoeff = 7
+Parameter \NBFcoeff = 5
+
+12.4. Executing AST frontend in derive mode using pre-parsed AST for module `\FIR_t'.
+Parameter \NBin = 8
+Parameter \NBFin = 5
+Parameter \NBout = 8
+Parameter \NBFout = 5
+Parameter \NBcoeff = 7
+Parameter \NBFcoeff = 5
+Generating RTLIL representation for module `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t'.
+Warning: Replacing memory \sum with list of registers. See /home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:82
+Warning: Replacing memory \w with list of registers. See /home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:45
+
+12.5. Executing AST frontend in derive mode using pre-parsed AST for module `\debug_unit'.
+Generating RTLIL representation for module `\debug_unit'.
+Parameter \ADDR_BITS = 7
+Parameter \DATA_BITS = 8
+
+12.6. Executing AST frontend in derive mode using pre-parsed AST for module `\spi_slave_mode0'.
+Parameter \ADDR_BITS = 7
+Parameter \DATA_BITS = 8
+Generating RTLIL representation for module `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0'.
+Parameter \N = 8
+
+12.7. Executing AST frontend in derive mode using pre-parsed AST for module `\serial_to_parallel'.
+Parameter \N = 8
+Generating RTLIL representation for module `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000'.
+Reprocessing module top because instantiated module debug_unit has become available.
+Generating RTLIL representation for module `\top'.
+
+12.8. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \debug_unit
+Parameter \N = 8
+Found cached RTLIL representation for module `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000'.
+Parameter \NBx = 8
+Parameter \NBFx = 5
+Parameter \NBy = 8
+Parameter \NBFy = 5
+Parameter \NBw = 7
+Parameter \NBFw = 5
+Found cached RTLIL representation for module `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS'.
+Parameter \NBin = 8
+Parameter \NBFin = 5
+Parameter \NBout = 8
+Parameter \NBFout = 5
+Parameter \NBcoeff = 7
+Parameter \NBFcoeff = 5
+Found cached RTLIL representation for module `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t'.
+Parameter \ADDR_BITS = 7
+Parameter \DATA_BITS = 8
+Found cached RTLIL representation for module `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0'.
+Parameter \N = 8
+Found cached RTLIL representation for module `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+
+12.9. Executing AST frontend in derive mode using pre-parsed AST for module `\cdc_snapshot'.
+Parameter \DATA_WIDTH = 8
+Generating RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+Parameter \DATA_WIDTH = 8
+Found cached RTLIL representation for module `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000'.
+
+12.10. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod\parallel_to_serial\N=s32'00000000000000000000000000001000
+Used module:     $paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS
+Used module:     $paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t
+Used module:     \debug_unit
+Used module:         $paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:     $paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0
+Used module:     $paramod\serial_to_parallel\N=s32'00000000000000000000000000001000
+
+12.11. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod\parallel_to_serial\N=s32'00000000000000000000000000001000
+Used module:     $paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS
+Used module:     $paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t
+Used module:     \debug_unit
+Used module:         $paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000
+Used module:     $paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0
+Used module:     $paramod\serial_to_parallel\N=s32'00000000000000000000000000001000
+Removing unused module `$abstract\FIR_t'.
+Removing unused module `$abstract\LMS'.
+Removing unused module `$abstract\cdc_snapshot'.
+Removing unused module `$abstract\debug_unit'.
+Removing unused module `$abstract\parallel_to_serial'.
+Removing unused module `$abstract\serial_to_parallel'.
+Removing unused module `$abstract\spi_slave_mode0'.
+Removing unused module `$abstract\top'.
+Removed 8 unused modules.
+Renaming module top to top.
+
+13. Executing PROC pass (convert processes to netlists).
+
+13.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 9 empty switches in `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+Cleaned up 9 empty switches.
+
+13.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:31$284 in module $paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.
+Marked 1 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:17$279 in module $paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.
+Marked 4 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262 in module $paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.
+Marked 3 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254 in module $paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.
+Marked 1 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:200$251 in module debug_unit.
+Marked 1 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249 in module debug_unit.
+Marked 2 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215 in module $paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.
+Marked 1 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:58$213 in module $paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.
+Marked 2 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211 in module $paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.
+Marked 3 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36 in module $paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.
+Marked 2 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34 in module $paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.
+Marked 1 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:81$30 in module $paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.
+Marked 5 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19 in module $paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.
+Marked 2 switch rules as full_case in process $proc$/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:27$268 in module $paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.
+Removed a total of 0 dead cases.
+
+13.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 6 redundant assignments.
+Promoted 53 assignments to connections.
+
+13.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:64$210'.
+  Set init value: \toggle = 1'0
+
+13.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:31$284'.
+Found async reset \rst_n in `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:17$279'.
+Found async reset \rst_n in `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262'.
+Found async reset \rst_n in `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+Found async reset \rst_n in `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+
+13.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~38 debug messages>
+
+13.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\top.$proc$/home/designer/shared/FSE-LMS/design/rtl/top.v:134$274'.
+     1/1: $0\x_r[7:0]
+Creating decoders for process `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:31$284'.
+     1/1: $0\data_out[7:0]
+Creating decoders for process `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:17$279'.
+     1/1: $0\trig_sync[2:0]
+Creating decoders for process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262'.
+     1/4: $0\rd_toggle_q[0:0]
+     2/4: $0\tx_active[0:0]
+     3/4: $0\tx_cnt[2:0]
+     4/4: $0\tx_shift[15:0]
+Creating decoders for process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+     1/12: $0\bit_cnt[3:0]
+     2/12: $0\rx_shift[15:0]
+     3/12: $2\next_rx[15:0]
+     4/12: $1\next_rx[15:0]
+     5/12: $0\done[0:0]
+     6/12: $0\write_enable[0:0]
+     7/12: $0\rd_toggle[0:0]
+     8/12: $0\addr_latched[6:0]
+     9/12: $0\rw_latched[0:0]
+    10/12: $0\rx_frame[15:0]
+    11/12: $0\data_out[7:0]
+    12/12: $0\addr_out[6:0]
+Creating decoders for process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:200$251'.
+     1/1: $1\spi_rdata[7:0]
+Creating decoders for process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+     1/12: $0\force_w8[7:0]
+     2/12: $0\force_w7[7:0]
+     3/12: $0\force_w6[7:0]
+     4/12: $0\force_w5[7:0]
+     5/12: $0\force_w4[7:0]
+     6/12: $0\force_w3[7:0]
+     7/12: $0\force_w2[7:0]
+     8/12: $0\force_w1[7:0]
+     9/12: $0\force_w0[7:0]
+    10/12: $0\enable_sig[7:0]
+    11/12: $0\debug_load[7:0]
+    12/12: $0\sw_reset[7:0]
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$247'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$245'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$243'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$241'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$239'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$237'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$235'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$233'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$231'.
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+     1/11: $2\k[31:0]
+     2/11: $1\k[31:0]
+     3/11: $0\sum[8][18:0]
+     4/11: $0\sum[7][18:0]
+     5/11: $0\sum[6][18:0]
+     6/11: $0\sum[5][18:0]
+     7/11: $0\sum[4][18:0]
+     8/11: $0\sum[3][18:0]
+     9/11: $0\sum[2][18:0]
+    10/11: $0\sum[1][18:0]
+    11/11: $0\sum[0][18:0]
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:58$213'.
+     1/1: $0\x_reg[7:0]
+Creating decoders for process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+     1/11: $2\i[31:0]
+     2/11: $1\i[31:0]
+     3/11: $0\w[8][6:0]
+     4/11: $0\w[7][6:0]
+     5/11: $0\w[6][6:0]
+     6/11: $0\w[5][6:0]
+     7/11: $0\w[4][6:0]
+     8/11: $0\w[3][6:0]
+     9/11: $0\w[2][6:0]
+    10/11: $0\w[1][6:0]
+    11/11: $0\w[0][6:0]
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:64$210'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$203'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$196'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$194'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$191'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$184'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$177'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$175'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$172'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$165'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$158'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$156'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$153'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$146'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$139'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$137'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$134'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$127'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$120'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$118'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$115'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$108'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$101'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$99'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$96'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$89'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$82'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$80'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$77'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$70'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$63'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$61'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$58'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$51'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$44'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$42'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$39'.
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+     1/12: $3\k[31:0]
+     2/12: $2\k[31:0]
+     3/12: $1\k[31:0]
+     4/12: $0\w[8][24:0]
+     5/12: $0\w[7][24:0]
+     6/12: $0\w[6][24:0]
+     7/12: $0\w[5][24:0]
+     8/12: $0\w[4][24:0]
+     9/12: $0\w[3][24:0]
+    10/12: $0\w[2][24:0]
+    11/12: $0\w[1][24:0]
+    12/12: $0\w[0][24:0]
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+     1/11: $2\j[31:0]
+     2/11: $1\j[31:0]
+     3/11: $0\x_r[8][7:0]
+     4/11: $0\x_r[7][7:0]
+     5/11: $0\x_r[6][7:0]
+     6/11: $0\x_r[5][7:0]
+     7/11: $0\x_r[4][7:0]
+     8/11: $0\x_r[3][7:0]
+     9/11: $0\x_r[2][7:0]
+    10/11: $0\x_r[1][7:0]
+    11/11: $0\x_r[0][7:0]
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:81$30'.
+     1/2: $0\count[31:0]
+     2/2: $0\mu[7:0]
+Creating decoders for process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:67$25'.
+     1/1: $0\toggle[0:0]
+Creating decoders for process `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19'.
+     1/5: $0\reg_done[0:0]
+     2/5: $0\reg_cnt[2:0]
+     3/5: $0\reg_sh[7:0]
+     4/5: $0\o_valid[0:0]
+     5/5: $0\o_data[0:0]
+Creating decoders for process `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:27$268'.
+     1/4: $0\o_ready[0:0]
+     2/4: $0\reg_cnt[2:0]
+     3/4: $0\reg_sh[7:0]
+     4/4: $0\o_data[7:0]
+
+13.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\debug_unit.\spi_rdata' from process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:200$251'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[8]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$247'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[7]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$245'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[6]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$243'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[5]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$241'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[4]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$239'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[3]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$237'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[2]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$235'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[1]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$233'.
+No latch inferred for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\prod[0]' from process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$231'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[8]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$203'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[8]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$196'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[8]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$194'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[8]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$191'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[7]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$184'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[7]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$177'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[7]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$175'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[7]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$172'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[6]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$165'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[6]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$158'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[6]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$156'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[6]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$153'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[5]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$146'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[5]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$139'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[5]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$137'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[5]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$134'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[4]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$127'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[4]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$120'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[4]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$118'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[4]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$115'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[3]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$108'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[3]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$101'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[3]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$99'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[3]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$96'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[2]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$89'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[2]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$82'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[2]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$80'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[2]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$77'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[1]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$70'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[1]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$63'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[1]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$61'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[1]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$58'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w_out[0]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$51'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sumSat[0]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$44'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\sum[0]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$42'.
+No latch inferred for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mult[0]' from process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$39'.
+
+13.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\top.\x_ready_q' using process `\top.$proc$/home/designer/shared/FSE-LMS/design/rtl/top.v:134$274'.
+  created $dff cell `$procdff$943' with positive edge clock.
+Creating register for signal `\top.\x_r' using process `\top.$proc$/home/designer/shared/FSE-LMS/design/rtl/top.v:134$274'.
+  created $dff cell `$procdff$944' with positive edge clock.
+Creating register for signal `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.\data_out' using process `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:31$284'.
+  created $adff cell `$procdff$949' with positive edge clock and positive level reset.
+Creating register for signal `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.\trig_sync' using process `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:17$279'.
+  created $adff cell `$procdff$954' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\tx_shift' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262'.
+  created $adff cell `$procdff$959' with negative edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\tx_cnt' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262'.
+  created $adff cell `$procdff$964' with negative edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\tx_active' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262'.
+  created $adff cell `$procdff$969' with negative edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\rd_toggle_q' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262'.
+  created $adff cell `$procdff$974' with negative edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\addr_out' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$979' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\data_out' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$984' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\write_enable' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$989' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\done' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$994' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\rx_frame' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$999' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\rx_shift' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$1004' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\bit_cnt' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$1009' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\rw_latched' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$1014' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\addr_latched' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$1019' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\rd_toggle' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $adff cell `$procdff$1024' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.\next_rx' using process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+  created $dff cell `$procdff$1031' with positive edge clock.
+Creating register for signal `\debug_unit.\sw_reset' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1036' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\debug_load' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1041' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\enable_sig' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1046' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w0' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1051' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w1' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1056' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w2' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1061' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w3' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1066' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w4' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1071' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w5' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1076' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w6' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1081' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w7' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1086' with positive edge clock and positive level reset.
+Creating register for signal `\debug_unit.\force_w8' using process `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+  created $adff cell `$procdff$1091' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\k' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1092' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[0]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1093' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[1]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1094' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[2]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1095' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[3]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1096' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[4]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1097' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[5]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1098' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[6]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1099' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[7]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1100' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\sum[8]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+  created $dff cell `$procdff$1101' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\x_reg' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:58$213'.
+  created $dff cell `$procdff$1102' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\i' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1103' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[0]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1104' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[1]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1105' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[2]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1106' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[3]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1107' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[4]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1108' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[5]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1109' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[6]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1110' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[7]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1111' with positive edge clock.
+Creating register for signal `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.\w[8]' using process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+  created $dff cell `$procdff$1112' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\k' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1113' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[0]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1114' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[1]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1115' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[2]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1116' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[3]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1117' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[4]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1118' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[5]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1119' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[6]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1120' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[7]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1121' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\w[8]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+  created $dff cell `$procdff$1122' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\j' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1123' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[0]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1124' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[1]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1125' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[2]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1126' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[3]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1127' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[4]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1128' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[5]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1129' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[6]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1130' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[7]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1131' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\x_r[8]' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+  created $dff cell `$procdff$1132' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\mu' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:81$30'.
+  created $dff cell `$procdff$1133' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\count' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:81$30'.
+  created $dff cell `$procdff$1134' with positive edge clock.
+Creating register for signal `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.\toggle' using process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:67$25'.
+  created $dff cell `$procdff$1135' with positive edge clock.
+Creating register for signal `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.\o_data' using process `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19'.
+  created $dff cell `$procdff$1136' with positive edge clock.
+Creating register for signal `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.\o_valid' using process `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19'.
+  created $dff cell `$procdff$1137' with positive edge clock.
+Creating register for signal `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.\reg_sh' using process `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19'.
+  created $dff cell `$procdff$1138' with positive edge clock.
+Creating register for signal `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.\reg_cnt' using process `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19'.
+  created $dff cell `$procdff$1139' with positive edge clock.
+Creating register for signal `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.\reg_done' using process `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19'.
+  created $dff cell `$procdff$1140' with positive edge clock.
+Creating register for signal `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.\o_ready' using process `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:27$268'.
+  created $dff cell `$procdff$1141' with positive edge clock.
+Creating register for signal `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.\o_data' using process `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:27$268'.
+  created $dff cell `$procdff$1142' with positive edge clock.
+Creating register for signal `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.\reg_sh' using process `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:27$268'.
+  created $dff cell `$procdff$1143' with positive edge clock.
+Creating register for signal `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.\reg_cnt' using process `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:27$268'.
+  created $dff cell `$procdff$1144' with positive edge clock.
+
+13.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+13.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\top.$proc$/home/designer/shared/FSE-LMS/design/rtl/top.v:134$274'.
+Removing empty process `top.$proc$/home/designer/shared/FSE-LMS/design/rtl/top.v:134$274'.
+Found and cleaned up 1 empty switch in `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:31$284'.
+Removing empty process `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:31$284'.
+Removing empty process `$paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/cdc_snapshot.v:17$279'.
+Found and cleaned up 4 empty switches in `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262'.
+Removing empty process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:116$262'.
+Found and cleaned up 5 empty switches in `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+Removing empty process `$paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.$proc$/home/designer/shared/FSE-LMS/design/rtl/spi_slave_mode0.v:56$254'.
+Found and cleaned up 1 empty switch in `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:200$251'.
+Removing empty process `debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:200$251'.
+Found and cleaned up 2 empty switches in `\debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+Removing empty process `debug_unit.$proc$/home/designer/shared/FSE-LMS/design/rtl/debug_unit.v:165$249'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$247'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$245'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$243'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$241'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$239'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$237'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$235'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$233'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:73$231'.
+Found and cleaned up 2 empty switches in `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:79$215'.
+Found and cleaned up 2 empty switches in `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:58$213'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:58$213'.
+Found and cleaned up 2 empty switches in `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+Removing empty process `$paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.$proc$/home/designer/shared/FSE-LMS/design/rtl/FIR_t.v:42$211'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:64$210'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$203'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$196'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$194'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$191'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$184'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$177'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$175'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$172'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$165'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$158'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$156'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$153'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$146'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$139'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$137'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$134'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$127'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$120'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$118'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$115'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$108'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$101'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$99'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$96'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$89'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$82'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$80'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$77'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$70'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$63'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$61'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$58'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:124$51'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:121$44'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:120$42'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:119$39'.
+Found and cleaned up 3 empty switches in `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:130$36'.
+Found and cleaned up 2 empty switches in `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:99$34'.
+Found and cleaned up 3 empty switches in `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:81$30'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:81$30'.
+Found and cleaned up 1 empty switch in `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:67$25'.
+Removing empty process `$paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.$proc$/home/designer/shared/FSE-LMS/design/rtl/LMS.v:67$25'.
+Found and cleaned up 6 empty switches in `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19'.
+Removing empty process `$paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/parallel_to_serial.v:29$19'.
+Found and cleaned up 3 empty switches in `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:27$268'.
+Removing empty process `$paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.$proc$/home/designer/shared/FSE-LMS/design/rtl/serial_to_parallel.v:27$268'.
+Cleaned up 38 empty switches.
+
+13.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.
+<suppressed ~6 debug messages>
+Optimizing module $paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.
+<suppressed ~34 debug messages>
+Optimizing module debug_unit.
+<suppressed ~25 debug messages>
+Optimizing module $paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.
+<suppressed ~23 debug messages>
+Optimizing module $paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.
+<suppressed ~26 debug messages>
+Optimizing module $paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.
+<suppressed ~5 debug messages>
+Optimizing module $paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.
+
+14. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\cdc_snapshot\DATA_WIDTH=s32'00000000000000000000000000001000.
+Deleting now unused module $paramod$f7aedd60a21e684e751b098f29b7dfdcd7697d25\spi_slave_mode0.
+Deleting now unused module debug_unit.
+Deleting now unused module $paramod$21212f497150829f9295da6488d9d10cafb03e12\FIR_t.
+Deleting now unused module $paramod$4e6a6bba780cf4f26bd7f37024c0b643227cbb05\LMS.
+Deleting now unused module $paramod\parallel_to_serial\N=s32'00000000000000000000000000001000.
+Deleting now unused module $paramod\serial_to_parallel\N=s32'00000000000000000000000000001000.
+<suppressed ~17 debug messages>
+
+15. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 135 unused cells and 747 unused wires.
+<suppressed ~281 debug messages>

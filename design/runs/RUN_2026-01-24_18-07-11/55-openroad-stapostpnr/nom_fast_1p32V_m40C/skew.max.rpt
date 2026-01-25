@@ -1,0 +1,22 @@
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+Clock clkA
+0.336237 source latency _23433_/CLK ^
+-0.311020 target latency _23441_/CLK ^
+0.200000 clock uncertainty
+0.000000 CRPR
+--------------
+0.225217 setup skew
+
+Clock spi_sclk
+0.144646 source latency _23771_/CLK ^
+-0.116260 target latency _23740_/CLK ^
+0.500000 clock uncertainty
+0.000000 CRPR
+--------------
+0.528386 setup skew
+
